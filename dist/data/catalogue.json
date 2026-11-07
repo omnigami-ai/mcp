@@ -1,0 +1,5267 @@
+{
+  "schemaVersion": 1,
+  "generated": "2026-11-07",
+  "source": "https://omnigami.ai/llms.txt",
+  "refresh": {
+    "llms": "https://omnigami.ai/llms.txt",
+    "installMd": "https://omnigami.ai/skills/<slug>/install.md"
+  },
+  "promptPlaceholder": "https://your-product.com",
+  "access": "Free skills install with no account. A paid skill installs only after purchase (the skill alone, or a plan that includes every paid skill), through the buyer’s GitHub account; the install lines are the same.",
+  "skills": [
+    {
+      "slug": "device-mockups",
+      "name": "Device mockups",
+      "kind": "images",
+      "output": "images",
+      "outputKind": "Device mockups",
+      "makes": "Device mockups, wide and tall",
+      "shapes": [
+        "wide",
+        "tall"
+      ],
+      "sizes": [
+        {
+          "label": "Wide",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "label": "Tall",
+          "width": 1080,
+          "height": 1920
+        }
+      ],
+      "tagline": "Your real screens, on a soft studio ground.",
+      "lede": "Your real screens, on a soft studio ground. Put your product’s real screens on photoreal hardware in a soft studio setting. Pair a laptop and phone, add your own short line, or show an action and its result on two phones. Get wide and tall PNGs, small review copies and editable HTML.",
+      "goodFor": [
+        "Light apps with genuine desktop and phone layouts",
+        "Landing-page artwork and product launch posts",
+        "Showing a real input and result side by side"
+      ],
+      "asks": [
+        "A working app or demo and the real states to show",
+        "Your supported desktop and phone layouts",
+        "Your colours, licensed fonts and a short product line"
+      ],
+      "files": [
+        "`out/L1/L1.png, out/L2/L2.png`: Two wide looks at 1920 × 1080: a laptop and phone, with or without a short product line.",
+        "`out/T1-line/T1-line.png, out/T2/T2.png`: Tall PNGs at 1080 × 1920: one phone beneath your line, and a phone pair showing a real action and its result when your product supports it.",
+        "`out/*/360.png, out/review.html`: 360 px review copies of every look: 360 × 203 wide and 360 × 640 tall, plus a review page.",
+        "`mockups-work/index.html, product.js, STORY.md, out/REVIEW.md`: Editable, self-contained HTML with local screens, fonts and devices; product inputs, the still plan and the final review."
+      ],
+      "requirements": [
+        "An AI coding agent that reads SKILL.md",
+        "Node 20.11 or later",
+        "ffmpeg",
+        "A Chrome-family browser with WebGL",
+        "puppeteer-core"
+      ],
+      "costs": "Free. Your agent’s usual usage applies; no paid API or image-generation account is needed for the included poses.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: yes (Larchly; 2 unattended runs)"
+      },
+      "page": "https://omnigami.ai/skills/device-mockups",
+      "installMd": "https://omnigami.ai/skills/device-mockups/install.md",
+      "request": "Install the Device mockups skill from https://omnigami.ai/skills/device-mockups/install.md, then: make light device mockups from my product’s real screens",
+      "jobs": [
+        "Launch",
+        "Release / what’s new",
+        "Website hero"
+      ],
+      "inputs": [
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/device-mockups"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "screen-lit-mockups",
+      "name": "Screen-lit mockups",
+      "kind": "images",
+      "output": "images",
+      "outputKind": "Screen-lit mockups",
+      "makes": "Screen-lit mockups, wide and tall",
+      "shapes": [
+        "wide",
+        "tall"
+      ],
+      "sizes": [
+        {
+          "label": "Wide",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "label": "Tall",
+          "width": 1080,
+          "height": 1920
+        }
+      ],
+      "tagline": "Your app, lit by its own screen.",
+      "lede": "Your app, lit by its own screen. Give your dark app a phone that glows in your own colours. Show a real result, pair another screen with a short product line, or choose a tall phone with an optional hand. Get wide and tall PNGs, small review copies and editable HTML.",
+      "goodFor": [
+        "Apps with a genuine dark phone layout",
+        "Dark landing-page artwork and product launch posts",
+        "A completed result and the real plan or input that preceded it"
+      ],
+      "asks": [
+        "A working app or demo with a genuine dark phone layout",
+        "Two different real moments, such as a plan and its completed result",
+        "Your accent colour, licensed fonts and a short product line"
+      ],
+      "files": [
+        "`out/D1/D1.png, out/D2/D2.png`: Two wide looks at 1920 × 1080: an angled phone on a real result, and a different product moment beside a short headline.",
+        "`out/T3/T3.png, out/T3-hand/T3-hand.png`: Two tall looks at 1080 × 1920: a near-frontal phone with a quiet accent rim, and a neutral-lit version held by the included hand.",
+        "`out/*/360.png, out/review.html`: 360 px review copies of every look: 360 × 203 wide and 360 × 640 tall, plus a review page.",
+        "`mockups-work/index.html, product.js, STORY.md, out/REVIEW.md`: Editable, self-contained HTML with local screens, fonts and devices; product inputs, the still plan and the final review."
+      ],
+      "requirements": [
+        "An AI coding agent that reads SKILL.md",
+        "Node 20.11 or later",
+        "ffmpeg",
+        "A Chrome-family browser with WebGL",
+        "puppeteer-core"
+      ],
+      "costs": "The skill, $4.99 once. Your agent’s usual usage applies; the included hand needs no new generation or paid image account.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: yes (Ostlery; 2 unattended runs)"
+      },
+      "page": "https://omnigami.ai/skills/screen-lit-mockups",
+      "installMd": "https://omnigami.ai/skills/screen-lit-mockups/install.md",
+      "request": "Install the Screen-lit mockups skill from https://omnigami.ai/skills/screen-lit-mockups/install.md, then: make screen-lit mockups from my app’s real dark screens",
+      "jobs": [
+        "Launch",
+        "Release / what’s new",
+        "Website hero"
+      ],
+      "inputs": [
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/screen-lit-mockups"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "product-film",
+      "name": "Product film",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 34 s, wide, square and tall",
+      "shapes": [
+        "wide",
+        "square",
+        "tall"
+      ],
+      "seconds": 34,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        },
+        {
+          "label": "Square",
+          "ratio": [
+            1,
+            1
+          ]
+        },
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "A 34-second launch film of your real product, in every shape.",
+      "lede": "A 34-second launch film of your real product, in every shape. Give it your URL. It reads your site, writes one short story in your own words, captures your real screens, and shows your product doing its job, with a cursor and a camera that follows it. You get MP4s in wide, square and tall, and a film you can still edit.",
+      "goodFor": [
+        "Apps and sites with a clear job to show on screen",
+        "Launches, feature announcements and landing pages",
+        "Posts for X, LinkedIn, Reels and TikTok"
+      ],
+      "asks": [
+        "Your product’s URL",
+        "Anything it should or shouldn’t show",
+        "The one thing you want viewers to do (it finds it on your site if you don’t say)"
+      ],
+      "files": [
+        "`out/16x9.mp4, 1x1.mp4, 9x16.mp4`: Wide, square and tall, each laid out for its frame: 60 fps, motion blur, music and a sound on every click.",
+        "`film/index.html`: The film as one HTML file. Its words are named fields, so you can change one and render again.",
+        "`film/STORY.md`: The story: who it’s for, the problem, the steps on your product, and a source for every claim.",
+        "`out/CAPTION.md`: A post to share it with, under 280 characters."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/product-film",
+      "installMd": "https://omnigami.ai/skills/product-film/install.md",
+      "request": "Install the Product film skill from https://omnigami.ai/skills/product-film/install.md, then: make a launch video for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Release / what’s new",
+        "Website hero"
+      ],
+      "inputs": [
+        "Product URL"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/product-film"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "cutout-film",
+      "name": "Cutout film",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 40 s, wide and tall",
+      "shapes": [
+        "wide",
+        "tall"
+      ],
+      "seconds": 40,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        },
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "A 40-second launch film of your real product, in a stepped cut-paper style.",
+      "lede": "A 40-second launch film of your real product, in a stepped cut-paper style. Give it your product. It redraws your real screens large and crisp, 12 frames a second, on flat colour fields that change by hard cuts. An oversized cursor leans into each click, and every beat has room to be read.",
+      "goodFor": [
+        "Web apps and tools with a clear job to show on screen",
+        "Launch films and landing pages that should look made, not generated",
+        "Posts for X, LinkedIn and YouTube"
+      ],
+      "asks": [
+        "Your product: its URL, and its source or a demo it can open (it redraws your real UI from its CSS)",
+        "Anything it should or shouldn’t show",
+        "Your line, if you have one (it finds one on your site if you don’t)"
+      ],
+      "files": [
+        "`out/16x9.mp4, 9x16.mp4`: The film, wide (1920 × 1080) and tall (1080 × 1920), each laid out for its frame: 12 fps with no motion blur, music, about −14 LUFS.",
+        "`film/index.html`: The film as one HTML file: your UI redrawn as vectors, its words in named fields, so you can change one and render again.",
+        "`film/STORY.md, vocabulary.md`: The story beat by beat, and the devices it took from your product’s own world, with why.",
+        "`out/CAPTION.md, out/REVIEW.md`: A post under 280 characters, and its critique scores, round by round."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "The skill, $4.99 once. Nothing else beyond your Claude plan’s usage; Node, ffmpeg and the browser are free.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: yes (Upshot, Lamplit; 3 unattended runs)"
+      },
+      "page": "https://omnigami.ai/skills/cutout-film",
+      "installMd": "https://omnigami.ai/skills/cutout-film/install.md",
+      "request": "Install the Cutout film skill from https://omnigami.ai/skills/cutout-film/install.md, then: make a cutout launch film for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Release / what’s new",
+        "Website hero"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo",
+        "Source code or repo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/cutout-film"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "device-film",
+      "name": "Device film",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 38.2 s, wide and tall",
+      "shapes": [
+        "wide",
+        "tall"
+      ],
+      "seconds": 38.2,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        },
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "A 40-second launch film of your real product on photoreal devices, cut like a hardware launch.",
+      "lede": "A 40-second launch film of your real product on photoreal devices, cut like a hardware launch. Give it your product. It puts your real screens on a photoreal laptop and phone: the laptop swings in and opens, captions stand alone on a light field, and your UI moves the way your app does, with time to read every beat.",
+      "goodFor": [
+        "Mac, web and iPhone apps with a clear job to show on screen",
+        "Launch films and landing pages that should feel like a hardware launch",
+        "Posts for X, LinkedIn and YouTube"
+      ],
+      "asks": [
+        "Your product: its URL, and a build or demo it can open (it films your real screens)",
+        "Which devices it runs on: a laptop, a phone or both",
+        "Anything it should or shouldn’t show"
+      ],
+      "files": [
+        "`out/16x9.mp4, 9x16.mp4`: The film, wide (1920 × 1080) and tall (1080 × 1920), each laid out for its frame, 30 fps, with music.",
+        "`film/index.html`: The film as one HTML file: your captured screens on the 3D devices, its words in one place, so you can change one and render again.",
+        "`STORY.md`: The story beat by beat, bar by bar on the music.",
+        "`out/CAPTION.md, out/REVIEW.md`: A post under 280 characters, and its critique scores, round by round."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "The skill, $7.99 once. Nothing else beyond your Claude plan’s usage; Node, ffmpeg and the browser are free.",
+      "free": false,
+      "price": 7.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: yes (Upshot, Fernwise, Tovra; 3 unattended runs)"
+      },
+      "page": "https://omnigami.ai/skills/device-film",
+      "installMd": "https://omnigami.ai/skills/device-film/install.md",
+      "request": "Install the Device film skill from https://omnigami.ai/skills/device-film/install.md, then: make a device launch film for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Website hero",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/device-film"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "ui-morph",
+      "name": "UI morph",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 16 s, square",
+      "shapes": [
+        "square"
+      ],
+      "seconds": 16,
+      "cuts": [
+        {
+          "label": "Square",
+          "ratio": [
+            1,
+            1
+          ]
+        }
+      ],
+      "tagline": "One shape, never cut, walking through one real task in your product.",
+      "lede": "One shape, never cut, walking through one real task in your product. One thing people do in your product, start to finish, in a short square loop. One container becomes each step in turn, from your button to your product’s own confirmation, as a cursor presses and a caption says what each step does for you.",
+      "goodFor": [
+        "Apps and shops with one clear task: book, skip, schedule, send, save",
+        "Feature announcements: one new thing, done once, start to finish",
+        "Square loops for X, LinkedIn and your landing page"
+      ],
+      "asks": [
+        "Your product’s URL, and a demo account if the task is behind a sign-in",
+        "The task to show, if you have one: two to four clicks, ending on a result",
+        "Anything it should or shouldn’t show"
+      ],
+      "files": [
+        "`film/index.html`: The film as one HTML file, marked where to keep and where to adapt. The button, the captions and the result are named fields; the rest is readable code.",
+        "`out/1x1.mp4`: The film, square: 1440 × 1440, 60 fps, motion blur, the skill’s song landing on the check, and a sound on every click.",
+        "`film/STORY.md`: Your task step by step: each click, what it opens, its caption, and where every word comes from.",
+        "`film/capture/`: Your product’s own screens in each state of the task, so the film shows only what your product really has.",
+        "`film/values.json`: Your saved word edits, used in the local preview and the next render.",
+        "`PRODUCT.md`: Local product and brand notes to reuse when making another clip.",
+        "`README.md`: Where to change a word, and the one command that renders it again.",
+        "`out/CAPTION.md, out/REVIEW.md`: A post under 280 characters, and its critique scores, round by round."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/ui-morph",
+      "installMd": "https://omnigami.ai/skills/ui-morph/install.md",
+      "request": "Install the UI morph skill from https://omnigami.ai/skills/ui-morph/install.md, then: make a short film of one task in https://your-product.com",
+      "jobs": [
+        "Release / what’s new",
+        "Website hero",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/ui-morph"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "chat-launch",
+      "name": "Chat launch",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 23 s, tall",
+      "shapes": [
+        "tall"
+      ],
+      "seconds": 23,
+      "cuts": [
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "Someone asks your product for something, and it delivers.",
+      "lede": "Someone asks your product for something, and it delivers. A launch film for products you ask for something, in one continuous take. A request types into your own composer, your product works on it, results burst in as cards, and the best one flies back into the chat and is done in one click.",
+      "goodFor": [
+        "Products you ask for something: assistants, search, booking, ordering",
+        "Launches with one request and a satisfying result",
+        "Posts for X, LinkedIn, Reels and your landing page"
+      ],
+      "asks": [
+        "Your product’s URL, and a demo account if its screens are behind a sign-in",
+        "The one request a user would type into it",
+        "The two lines it ends on"
+      ],
+      "files": [
+        "`film/index.html`: The film as one HTML file, built on your product’s captured screens. The closing lines and tagline are named fields; the rest is readable code.",
+        "`out/9x16.mp4`: The film, tall: 60 fps, motion blur, a 130 BPM bed with a drop, and a sound on every event.",
+        "`film/STATES.md`: Your story in one sentence and every beat mapped to your product, with what it shows in each.",
+        "`README.md`: Where to change a word, and the one command that renders it again."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/chat-launch",
+      "installMd": "https://omnigami.ai/skills/chat-launch/install.md",
+      "request": "Install the Chat launch skill from https://omnigami.ai/skills/chat-launch/install.md, then: make a chat launch video for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Social",
+        "Website hero",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/chat-launch"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "unfold",
+      "name": "Unfold",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 31 s, tall",
+      "shapes": [
+        "tall"
+      ],
+      "seconds": 31,
+      "cuts": [
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "A keynote-style launch film in one continuous shot.",
+      "lede": "A keynote-style launch film in one continuous shot. A launch film where every scene is made out of the one before it. Your wordmark drops away to its full stop, the dot becomes a button, a grid of your product unfolds, and one thing travels through your product’s real flow to a phone and on to the real result, all without a single cut.",
+      "goodFor": [
+        "Products whose customers go through a flow: order, book, publish, send",
+        "Products with a result you can show: something delivered, booked or live",
+        "Launches that want a calm, keynote feel"
+      ],
+      "asks": [
+        "Your product’s URL",
+        "Its name, as the wordmark should read",
+        "Its tagline",
+        "Your main call to action",
+        "Anything it should or shouldn’t show"
+      ],
+      "files": [
+        "`film/index.html`: The film as one HTML file. The wordmark, tagline and key words are named fields; the rest is readable code.",
+        "`out/9x16.mp4`: The film, tall: 60 fps, motion blur, a 120 BPM bed, and a sound on every click.",
+        "`film/STATES.md`: Your story in one sentence and every act mapped to your product: the grid’s nine tiles, what the slider drives, your flow’s pages, what reaches the phone and the result.",
+        "`README.md`: Where to change a word, and the one command that renders it again."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "The skill, $4.99 once. Nothing else beyond your Claude plan’s usage; Node, ffmpeg and the browser are free.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/unfold",
+      "installMd": "https://omnigami.ai/skills/unfold/install.md",
+      "request": "Install the Unfold skill from https://omnigami.ai/skills/unfold/install.md, then: make an Unfold launch video for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Social",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/unfold"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "language-launch",
+      "name": "Language launch",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Announcement",
+      "makes": "Announcement (whole film), 15 s, tall",
+      "shapes": [
+        "tall"
+      ],
+      "seconds": 15,
+      "cuts": [
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "Your product now speaks more languages. Show it.",
+      "lede": "Your product now speaks more languages. Show it. Announce that your product now speaks more languages. Each language rolls in by its own name as your real screen swipes to its phone, then every phone flies into one row under the count.",
+      "goodFor": [
+        "Apps and sites that just added languages",
+        "International launches and localization updates",
+        "Posts for X, LinkedIn, Reels and TikTok"
+      ],
+      "asks": [
+        "Your product’s URL, and a demo account if its screens are behind a sign-in",
+        "How to switch its language, and which languages to show",
+        "Its tagline"
+      ],
+      "files": [
+        "`film/index.html`: The film as one HTML file, on your product’s captured screens. The name, the verb, the count and the tagline are named fields.",
+        "`out/9x16.mp4`: The film, tall: 60 fps, motion blur, a 120 BPM bed, and a sound on every arrival.",
+        "`film/STATES.md`: The story in one sentence, the screen it shows, and every language in order.",
+        "`README.md`: How to add a language, recapture the screens, and render again."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/language-launch",
+      "installMd": "https://omnigami.ai/skills/language-launch/install.md",
+      "request": "Install the Language launch skill from https://omnigami.ai/skills/language-launch/install.md, then: make a language launch video for https://your-product.com",
+      "jobs": [
+        "Release / what’s new",
+        "Social"
+      ],
+      "inputs": [
+        "Product URL"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/language-launch"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "milestone",
+      "name": "Milestone",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Announcement",
+      "makes": "Announcement (whole film), 16 s, tall",
+      "shapes": [
+        "tall"
+      ],
+      "seconds": 16,
+      "cuts": [
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "One tap, a million times. Celebrate the number.",
+      "lede": "One tap, a million times. Celebrate the number. A milestone film on your real screens. The one action your number counts, done once on your product, then its result lifts out of the app and multiplies into thousands as a counter rolls to your milestone. A thank-you, and the field closes into your app’s icon.",
+      "goodFor": [
+        "Products that just reached a number: users, orders, plants watered, files shipped",
+        "Thank-you posts and anniversaries",
+        "Posts for X, LinkedIn, Reels and TikTok"
+      ],
+      "asks": [
+        "Your product’s URL, and a demo account if its screens are behind a sign-in",
+        "Your milestone: the real number and what it counts",
+        "Your tagline"
+      ],
+      "files": [
+        "`film/index.html`: The film as one HTML file, on your product’s captured screens. The lines, the number and the tagline are named fields.",
+        "`out/9x16.mp4`: The film, tall: 60 fps, motion blur, a 120 BPM bed, and a sound on every beat.",
+        "`film/STATES.md`: The story in one sentence: the action, its result, and every state.",
+        "`README.md`: Where to change the number or a word, and the command that renders it again."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/milestone",
+      "installMd": "https://omnigami.ai/skills/milestone/install.md",
+      "request": "Install the Milestone skill from https://omnigami.ai/skills/milestone/install.md, then: make a milestone video for https://your-product.com: we just passed 1,000,000 orders",
+      "jobs": [
+        "Release / what’s new",
+        "Social"
+      ],
+      "inputs": [
+        "Product URL"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/milestone"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "illustrated-ad",
+      "name": "Illustrated ad",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Ad",
+      "makes": "Ad (whole film), 16 s, tall",
+      "shapes": [
+        "tall"
+      ],
+      "seconds": 16,
+      "cuts": [
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "Your ingredients, drawn as we watch.",
+      "lede": "Your ingredients, drawn as we watch. An ad for a physical product range. Each product’s ingredients draw themselves stroke by stroke in your packaging’s own illustration style, and the real product rises in front of them, one page after another, ending on all of them together with your line and call to action.",
+      "goodFor": [
+        "Drinks, food, cosmetics and other physical products with illustrated packaging",
+        "Product ranges of two to four",
+        "Ads for Instagram, TikTok and your shop"
+      ],
+      "asks": [
+        "Your products and what goes into each",
+        "Product photographs on a plain background, or permission to make renders from your packaging",
+        "Your line, call to action and address"
+      ],
+      "files": [
+        "`film/index.html`: The ad as one HTML file. Each product’s name, the line and the call to action are named fields.",
+        "`film/assets/art/`: Your ingredients as illustrations in your packaging’s style, and your products cut out.",
+        "`out/9x16.mp4`: The ad, tall: 60 fps, motion blur, a 120 BPM bed and a sound on every beat.",
+        "`film/STATES.md`: The story in one sentence: each product, its ingredients, and the end."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "Python 3 with Pillow and NumPy",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave",
+        "An image model for the illustrations (your agent’s own, if it has one)"
+      ],
+      "costs": "None beyond your Claude plan’s usage, unless your image model charges for the illustrations.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/illustrated-ad",
+      "installMd": "https://omnigami.ai/skills/illustrated-ad/install.md",
+      "request": "Install the Illustrated ad skill from https://omnigami.ai/skills/illustrated-ad/install.md, then: make an illustrated ad for my three teas: https://your-shop.com",
+      "jobs": [
+        "Store listing",
+        "Social"
+      ],
+      "inputs": [
+        "Product photos"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/illustrated-ad"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "whats-new",
+      "name": "What’s new",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Release video",
+      "makes": "Release video (whole film), 28 s, wide, square and tall",
+      "shapes": [
+        "wide",
+        "square",
+        "tall"
+      ],
+      "seconds": 28,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        },
+        {
+          "label": "Square",
+          "ratio": [
+            1,
+            1
+          ]
+        },
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "A release video you can make again with every version.",
+      "lede": "A release video you can make again with every version. Give it your changelog and your product. Each new feature gets a beat: its name, one line, and your real product doing exactly that, close up. Then one number that proves the release, and your mark and version.",
+      "goodFor": [
+        "Changelogs, version updates and release notes",
+        "Developer tools, web apps and phone apps",
+        "Teams that ship often and want the same clip every time"
+      ],
+      "asks": [
+        "Your changelog or release notes",
+        "Your product’s URL, or a build it can run",
+        "The version, and how people get it (an install line, “Update now”, a store name)"
+      ],
+      "files": [
+        "`out/16x9.mp4, 1x1.mp4, 9x16.mp4`: Wide, square and tall, each laid out for its frame: 60 fps, motion blur, music and a sound on every click.",
+        "`film/index.html`: The film as one HTML file. The feature names, lines, number and ending are named fields.",
+        "`film/STORY.md`: The features chosen, the moment on your product that shows each one, and a source for the number.",
+        "`PRODUCT.md`: Your brand and words, kept for the next release.",
+        "`out/CAPTION.md`: A post to share it with, under 280 characters."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/whats-new",
+      "installMd": "https://omnigami.ai/skills/whats-new/install.md",
+      "request": "Install the What’s new skill from https://omnigami.ai/skills/whats-new/install.md, then: make a what’s-new video for our latest release of https://your-product.com",
+      "jobs": [
+        "Release / what’s new"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo",
+        "Release notes"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/whats-new"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "product-reel",
+      "name": "Product reel",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Product reel",
+      "makes": "Product reel (whole film), 25 s, wide, square and tall",
+      "shapes": [
+        "wide",
+        "square",
+        "tall"
+      ],
+      "seconds": 25,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        },
+        {
+          "label": "Square",
+          "ratio": [
+            1,
+            1
+          ]
+        },
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "Everything you make, one item a beat.",
+      "lede": "Everything you make, one item a beat. A short reel of a whole range. Each item gets a beat with its photo, name and detail, then the last pulls back into your real catalogue: your numbers count up, your real search finds one, and your name holds to the end.",
+      "goodFor": [
+        "Shops, catalogues and apps with a collection to show",
+        "Products with good photos of each item",
+        "Reels and posts for Instagram, TikTok and X"
+      ],
+      "asks": [
+        "Your product’s URL",
+        "Six or seven items to show, with a photo of each",
+        "Your address or the one thing to do at the end"
+      ],
+      "files": [
+        "`out/9x16.mp4, 1x1.mp4, 16x9.mp4`: Tall, square and wide, each laid out for its frame: 60 fps, motion blur, music and a sound on every beat.",
+        "`film/index.html`: The reel as one HTML file. Every item’s name, kind, detail and pill are named fields.",
+        "`film/STORY.md`: The items in order, the screens, and a source for every number.",
+        "`out/CAPTION.md`: A post to share it with, under 280 characters."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/product-reel",
+      "installMd": "https://omnigami.ai/skills/product-reel/install.md",
+      "request": "Install the Product reel skill from https://omnigami.ai/skills/product-reel/install.md, then: make a product reel of everything on https://your-shop.com",
+      "jobs": [
+        "Store listing",
+        "Social"
+      ],
+      "inputs": [
+        "Product URL",
+        "Product photos"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/product-reel"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "struck-hook",
+      "name": "Struck hook",
+      "kind": "shot",
+      "output": "film",
+      "outputKind": "Opener",
+      "makes": "Opener (single scene), 5 s, wide",
+      "shapes": [
+        "wide"
+      ],
+      "seconds": 5,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        }
+      ],
+      "tagline": "The old way in three huge lines, struck out.",
+      "lede": "The old way in three huge lines, struck out. A short opener: the problem your product solves lands in three huge lines on the beat, then every line is struck through in your brand colour and held. It sets up the turn to your product.",
+      "goodFor": [
+        "Opening a launch video with the problem it solves",
+        "Products that replace a slow, costly or annoying old way",
+        "Teasers and ads that need a strong first second"
+      ],
+      "asks": [
+        "Your product’s URL",
+        "The old way, in three short lines (it reads them from your site if you don’t say)"
+      ],
+      "files": [
+        "`film/index.html`: The shot as one HTML file. Its words are named fields; the rest is readable code.",
+        "`out/16x9.mp4, 1x1.mp4, 9x16.mp4`: 5 seconds in wide, square and tall, each laid out for its frame: 60 fps, motion blur, a 120 BPM bed and the effects.",
+        "`out/*-poster.png`: A poster frame of each shape."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/struck-hook",
+      "installMd": "https://omnigami.ai/skills/struck-hook/install.md",
+      "request": "Install the Struck hook skill from https://omnigami.ai/skills/struck-hook/install.md, then: make a struck-hook opener for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Social"
+      ],
+      "inputs": [
+        "Product URL"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/struck-hook"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "typed-promise",
+      "name": "Typed promise",
+      "kind": "shot",
+      "output": "film",
+      "outputKind": "Name reveal",
+      "makes": "Name reveal (single scene), 6.5 s, wide",
+      "shapes": [
+        "wide"
+      ],
+      "seconds": 6.5,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        }
+      ],
+      "tagline": "One line typed, then your name and its promise.",
+      "lede": "One line typed, then your name and its promise. A short reveal: the turn lands, your mark opens into a prompt bar that types one line and sends it, then the mark settles beside your name with a one-line promise. Made for products driven by one typed line.",
+      "goodFor": [
+        "AI tools, search, command-line tools: anything driven by one typed line",
+        "The turn after a problem, or a name reveal on its own",
+        "Launches that end on what the product promises"
+      ],
+      "asks": [
+        "Your product’s URL",
+        "The one line a user types into it",
+        "Your mark as an SVG or image (or it keeps a placeholder pill)"
+      ],
+      "files": [
+        "`film/index.html`: The shot as one HTML file. Its words are named fields; the rest is readable code.",
+        "`out/16x9.mp4, 1x1.mp4, 9x16.mp4`: 6.5 seconds in wide, square and tall, each laid out for its frame: 60 fps, motion blur, a 120 BPM bed and the effects.",
+        "`out/*-poster.png`: A poster frame of each shape."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/typed-promise",
+      "installMd": "https://omnigami.ai/skills/typed-promise/install.md",
+      "request": "Install the Typed promise skill from https://omnigami.ai/skills/typed-promise/install.md, then: make a typed-promise reveal for https://your-product.com",
+      "jobs": [
+        "Launch"
+      ],
+      "inputs": [
+        "Product URL"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/typed-promise"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "end-card",
+      "name": "End card",
+      "kind": "shot",
+      "output": "film",
+      "outputKind": "End card",
+      "makes": "End card (single scene), 4.5 s, wide",
+      "shapes": [
+        "wide"
+      ],
+      "seconds": 4.5,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        }
+      ],
+      "tagline": "Your mark, your address and the one action, held to the last frame.",
+      "lede": "Your mark, your address and the one action, held to the last frame. An end card: your mark is born and slides aside for your name, then your address, the one action (a line to type or your own button) and a tagline land on the beat and hold. Every launch video needs one.",
+      "goodFor": [
+        "Ending any launch video, teaser, demo or ad",
+        "An install line, a package name or a sign-up button",
+        "A logo lockup on its own"
+      ],
+      "asks": [
+        "Your product’s URL",
+        "The one action: a line to type, or your main button’s words",
+        "Your mark as an SVG or image (or it keeps a placeholder pill)"
+      ],
+      "files": [
+        "`film/index.html`: The shot as one HTML file. Its words are named fields; the rest is readable code.",
+        "`out/16x9.mp4, 1x1.mp4, 9x16.mp4`: 4.5 seconds in wide, square and tall, each laid out for its frame: 60 fps, motion blur, a 120 BPM bed and the effects.",
+        "`out/*-poster.png`: A poster frame of each shape."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/end-card",
+      "installMd": "https://omnigami.ai/skills/end-card/install.md",
+      "request": "Install the End card skill from https://omnigami.ai/skills/end-card/install.md, then: make an end card for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Social"
+      ],
+      "inputs": [
+        "Product URL"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/end-card"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "cursor-camera",
+      "name": "Cursor camera",
+      "kind": "shot",
+      "output": "film",
+      "outputKind": "Feature demo",
+      "makes": "Feature demo (single scene), 18 s, wide",
+      "shapes": [
+        "wide"
+      ],
+      "seconds": 18,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        }
+      ],
+      "tagline": "Your real screens, a cursor and a camera that follows it.",
+      "lede": "Your real screens, a cursor and a camera that follows it. A demo of one real task on your product’s real screens. A big cursor glides between targets, lights what it hovers, clicks, scrolls and drags a selection, and the camera it carries pushes in and pulls back with it, ending on the real result.",
+      "goodFor": [
+        "Showing one task working on your real product",
+        "A few clicks, a scroll and a visible result: open, look, act, done",
+        "Feature clips and demo moments inside a longer film"
+      ],
+      "asks": [
+        "Your product’s URL, and the pages where the task happens",
+        "The task to show, if you have one in mind",
+        "A demo account, if the pages need a sign-in"
+      ],
+      "files": [
+        "`film/index.html`: The shot as one HTML file. Its words are named fields; the rest is readable code.",
+        "`out/16x9.mp4, 1x1.mp4, 9x16.mp4`: 18 seconds in wide, square and tall, each laid out for its frame: 60 fps, motion blur, a 120 BPM bed and the effects.",
+        "`out/*-poster.png`: A poster frame of each shape."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/cursor-camera",
+      "installMd": "https://omnigami.ai/skills/cursor-camera/install.md",
+      "request": "Install the Cursor camera skill from https://omnigami.ai/skills/cursor-camera/install.md, then: make a cursor-camera demo of the main task on https://your-product.com",
+      "jobs": [
+        "Release / what’s new",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/cursor-camera"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "terminal-film",
+      "name": "Terminal film",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 31.3 s, wide and tall",
+      "shapes": [
+        "wide",
+        "tall"
+      ],
+      "seconds": 31.3,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        },
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "Your real terminal, big headlines and a 3D brand ending.",
+      "lede": "Your real terminal, big headlines and a 3D brand ending. A launch film for a developer tool with a real CLI. Your actual commands and results play in a terminal window, each step introduced by one big headline, before your mark leads into your lockup and address.",
+      "goodFor": [
+        "Developer tools with a working CLI or terminal UI",
+        "One command-led task with a visible result",
+        "Launch posts and landing pages"
+      ],
+      "asks": [
+        "Your product URL and a CLI or demo it can capture",
+        "One terminal task, with sample data and a real result",
+        "Your brand assets and any music you want to supply"
+      ],
+      "files": [
+        "`out/16x9.mp4`: A wide (1920 × 1080) and a tall (1080 × 1920) MP4, each laid out for its frame, 30 fps, with motion blur and music.",
+        "`film/index.html`: A self-contained film with your captured terminal states, brand and editable source.",
+        "`STORY.md, capture.json`: The story and reproducible capture plan.",
+        "`out/16x9-poster.png, out/review/`: A poster, a 2 fps contact sheet and a phone-width review sheet.",
+        "`out/REVIEW.md, out/CAPTION.md`: The review notes and a short caption for sharing."
+      ],
+      "requirements": [
+        "A coding agent",
+        "Node 20.11 or later",
+        "ffmpeg and ffprobe",
+        "a Chrome-family browser with WebGL"
+      ],
+      "costs": "The skill, $4.99 once. Your agent’s usage and any music you supply are separate.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/terminal-film",
+      "installMd": "https://omnigami.ai/skills/terminal-film/install.md",
+      "request": "Install the Terminal film skill from https://omnigami.ai/skills/terminal-film/install.md, then: make a terminal film for https://your-product.com showing one real CLI task.",
+      "jobs": [
+        "Launch",
+        "Website hero",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/terminal-film"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "headline-film",
+      "name": "Headline film",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 42.1 s, wide",
+      "shapes": [
+        "wide"
+      ],
+      "seconds": 42.1,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        }
+      ],
+      "tagline": "A launch film with big type, real app cards and a beat to follow.",
+      "lede": "A launch film with big type, real app cards and a beat to follow. Headlines step around your real app screens. Letters briefly switch to lookalikes, cards turn and grow into close views of your product working, and quick montages lead to your mark and closing line. You get a wide MP4 with music and an editable film.",
+      "goodFor": [
+        "Apps with a clear action and a visible result",
+        "Launches and feature announcements with bold headlines",
+        "Product demos for X, LinkedIn and landing pages"
+      ],
+      "asks": [
+        "Your product’s URL and an app or demo it can open",
+        "Anything to show or avoid, and your closing action",
+        "Your brand assets and, optionally, a cleared music track"
+      ],
+      "files": [
+        "`out/16x9.mp4`: A wide 1920 × 1080 MP4 at 30 fps, with music and no voice-over.",
+        "`film/index.html, STORY.md`: The editable film and its story, with real captured screens and local fonts.",
+        "`capture/plan.json`: The reproducible capture plan, sample states and measured component bounds.",
+        "`out/*-poster.png, out/*-sheet.png, out/REVIEW.md`: A poster, a 2 fps contact sheet, a sharing caption and the review notes."
+      ],
+      "requirements": [
+        "An AI coding agent that can read SKILL.md",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "The skill, $4.99 once. Your coding agent’s normal usage applies; the bundled music needs no separate purchase.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: yes (Tovra, Fernwise; 5 unattended runs)"
+      },
+      "page": "https://omnigami.ai/skills/headline-film",
+      "installMd": "https://omnigami.ai/skills/headline-film/install.md",
+      "request": "Install the Headline film skill from https://omnigami.ai/skills/headline-film/install.md, then: make a headline film for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Release / what’s new",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/headline-film"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "walkthrough-film",
+      "name": "Walkthrough film",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 31.2 s, wide and tall",
+      "shapes": [
+        "wide",
+        "tall"
+      ],
+      "seconds": 31.2,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        },
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "One item’s journey, told through your real product.",
+      "lede": "One item’s journey, told through your real product. Give it one journey through your product. It follows an invoice, meeting or request on your real screens from its first step to its result, with large editorial type, dated corner labels and halftone transitions.",
+      "goodFor": [
+        "Products with one item whose progress can be shown on screen",
+        "Launch films and product stories",
+        "Landing pages and posts for X, LinkedIn and YouTube"
+      ],
+      "asks": [
+        "Your product’s URL and an app, demo or cleared captures it can open",
+        "The journey to show and anything to avoid",
+        "A song you have the rights to, if you prefer it to the included one"
+      ],
+      "files": [
+        "`out/final/16x9.mp4`: A wide (1920 × 1080) and a tall (1080 × 1920) MP4, each laid out for its frame, about 31 seconds at 30 fps, with the included song.",
+        "`film/index.html`: The editable HTML film with local screens, fonts and brand assets.",
+        "`STORY.md, capture/plan.json, PRODUCT.md`: The story, capture plan and sources for the claims.",
+        "`out/final/16x9-poster.png, out/final/16x9-sheet.png, out/CAPTION.md, out/REVIEW.md`: A poster, a contact sheet at two frames a second, a sharing caption and review notes."
+      ],
+      "requirements": [
+        "An agent that reads SKILL.md",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "The skill, $7.99 once. Your agent’s usage is separate; Node, ffmpeg and the browser are free. The skill ships its own song and a synthesised score.",
+      "free": false,
+      "price": 7.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/walkthrough-film",
+      "installMd": "https://omnigami.ai/skills/walkthrough-film/install.md",
+      "request": "Install the Walkthrough film skill from https://omnigami.ai/skills/walkthrough-film/install.md, then: make a walkthrough film for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Website hero",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo",
+        "Your own screen captures"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/walkthrough-film"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "assistant-film",
+      "name": "Assistant film",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 57.1 s, wide and tall",
+      "shapes": [
+        "wide",
+        "tall"
+      ],
+      "seconds": 57.1,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        },
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "Your assistant doing one real job, filmed through its UI in depth.",
+      "lede": "Your assistant doing one real job, filmed through its UI in depth. Give it your working product. It captures a request, the assistant’s evidence, its action and the result, then films your real screens with raised UI, travelling focus and a moving camera. A wide and a tall MP4 with music, plus the editable film.",
+      "goodFor": [
+        "Assistants and agent features with a visible request and result",
+        "Software launches and feature announcements",
+        "Product demos for X, YouTube and landing pages"
+      ],
+      "asks": [
+        "Your product’s URL and a working build or demo with sample data",
+        "One task the assistant really completes",
+        "Your brand, closing line and anything to avoid"
+      ],
+      "files": [
+        "`out/final/16x9.mp4`: A wide (1920 × 1080) and a tall (1080 × 1920) MP4, each laid out for its frame, at 30 fps, with the included song, the synthesised score or a song you have the rights to.",
+        "`film/index.html`: An editable, self-contained film with your real captures, fonts, mark and vendored 3D runtime.",
+        "`STORY.md, PRODUCT.md, capture/`: The story, brand notes and reproducible capture plans.",
+        "`out/*-poster.png, out/REVIEW.md, out/CAPTION.md`: A poster, contact sheets, critique notes and a short sharing caption."
+      ],
+      "requirements": [
+        "A coding agent with local file and shell access",
+        "Node 20 or later",
+        "ffmpeg",
+        "a Chrome-family browser with WebGL"
+      ],
+      "costs": "The skill, $7.99 once, plus your coding agent’s usage. Its own song and a synthesised score are included; any song you supply needs its own licence.",
+      "free": false,
+      "price": 7.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/assistant-film",
+      "installMd": "https://omnigami.ai/skills/assistant-film/install.md",
+      "request": "Install the Assistant film skill from https://omnigami.ai/skills/assistant-film/install.md, then: make an assistant film for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Release / what’s new",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/assistant-film"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "statement-film",
+      "name": "Statement film",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 59.3 s, wide and tall",
+      "shapes": [
+        "wide",
+        "tall"
+      ],
+      "seconds": 59.3,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        },
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "A one-minute launch film: big serif statements and your real product at work.",
+      "lede": "A one-minute launch film: big serif statements and your real product at work. Tell one clear story with your real app. Large serif statements set up each step, your user’s request is typed large before your product opens around it, and the camera turns close to the action.",
+      "goodFor": [
+        "Software and assistants with a real workflow to demonstrate",
+        "Product launches and feature announcements",
+        "Landing pages and posts for X, LinkedIn and YouTube"
+      ],
+      "asks": [
+        "Your product URL and a working app or demo it can open",
+        "Your brand and the one job the film should explain",
+        "Anything it should show or avoid"
+      ],
+      "files": [
+        "`out/final/16x9.mp4`: A roughly one-minute film, wide (1920 × 1080) and tall (1080 × 1920), each laid out for its frame, at 30 fps, with its own song and pitched effects, or a track you have the rights to.",
+        "`film/index.html`: The editable film and its local captured screens, fonts and brand assets.",
+        "`PRODUCT.md, STORY.md`: The product facts and sources, the captions and a beat sheet on the music’s grid.",
+        "`out/*-poster.png, out/*-sheet.png, out/REVIEW.md, out/CAPTION.md`: A poster, a contact sheet, review notes and a short caption for sharing."
+      ],
+      "requirements": [
+        "An agent that can edit files and run local commands",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "The skill, $7.99 once, plus your agent’s usage. Node, ffmpeg and the browser are free. Its own song, a synthesised score and effects ship with the skill.",
+      "free": false,
+      "price": 7.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/statement-film",
+      "installMd": "https://omnigami.ai/skills/statement-film/install.md",
+      "request": "Install the Statement film skill from https://omnigami.ai/skills/statement-film/install.md, then: make a statement film for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Release / what’s new",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/statement-film"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "collage-film",
+      "name": "Collage film",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 33.5 s, wide and tall",
+      "shapes": [
+        "wide",
+        "tall"
+      ],
+      "seconds": 33.5,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        },
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "Your real product in a 33-second editorial collage.",
+      "lede": "Your real product in a 33-second editorial collage. Numbered spreads, two-ink photo plates and your real screens tell one product story, a spread to a few beats, from the opening line to an action and its result. Each change is led by one object on the music. You get a wide and a tall MP4 with music and an editable film.",
+      "goodFor": [
+        "Software with a clear workflow and a visible result",
+        "Launches and landing pages with an editorial look",
+        "Posts for X, LinkedIn and YouTube"
+      ],
+      "asks": [
+        "Your product URL and an app or demo it can open",
+        "Your brand, line and anything to show or avoid",
+        "Your own photos or permission to make photoreal object renders"
+      ],
+      "files": [
+        "`out/final/16x9.mp4`: A wide (1920 × 1080) and a tall (1080 × 1920) film, each laid out for its frame, at 30 fps, with music.",
+        "`film/index.html`: The editable film, with your captured screens, words, colours, fonts and mark.",
+        "`STORY.md, out/REVIEW.md`: The story beat by beat, and its review notes and checks.",
+        "`out/final/16x9-poster.png, out/contact/, out/CAPTION.md`: A poster, contact sheet and short caption for sharing."
+      ],
+      "requirements": [
+        "An agent that can edit files and run commands",
+        "Node 20 or later",
+        "ffmpeg and a Chrome-family browser",
+        "Python 3, Pillow and NumPy"
+      ],
+      "costs": "The skill, $4.99 once, plus your agent plan’s usage. New renders or licensed music may have costs depending on the tools you choose. The skill includes its own song and a synthesised score.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/collage-film",
+      "installMd": "https://omnigami.ai/skills/collage-film/install.md",
+      "request": "Install the Collage film skill from https://omnigami.ai/skills/collage-film/install.md, then: make an editorial collage launch film for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Website hero",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo",
+        "Product photos"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/collage-film"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "android-style-logo-reveal",
+      "name": "Android Style Logo Reveal",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Name reveal",
+      "makes": "Name reveal (whole film), 15.5 s, wide",
+      "shapes": [
+        "wide"
+      ],
+      "seconds": 15.5,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        }
+      ],
+      "tagline": "Your mark built from its own geometry, then your line, then your lockup.",
+      "lede": "Your mark built from its own geometry, then your line, then your lockup. A logo reveal drawn from your mark’s own geometry, while four short lines say what your product does. The camera pushes into its colour, your line types into your own product, and one press blooms out to your lockup.",
+      "goodFor": [
+        "Opening a launch video, a demo or a channel with your brand",
+        "Marks drawn from circles, arcs and bars, with an idea behind them",
+        "Products you type into or press: assistants, search, booking, payments"
+      ],
+      "asks": [
+        "Your product’s URL, and its app or a demo",
+        "Your mark as an SVG: the film builds it from its own geometry",
+        "Your line and the four things your product does for you, if you have them in mind"
+      ],
+      "files": [
+        "`film/index.html`: The film as one HTML file: your mark, its construction, your words and your input. The two lines are named fields; the rest is readable code.",
+        "`out/16x9.mp4`: 15.5 seconds wide (1920 × 1080) at 30 fps, with the skill’s own song landing on your lockup.",
+        "`STORY.md, PRODUCT.md`: Your story, the construction plan and every word with its source.",
+        "`out/16x9-poster.png, out/REVIEW.md, out/CAPTION.md`: A poster of the lockup, the review notes round by round and a short caption for sharing."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/android-style-logo-reveal",
+      "installMd": "https://omnigami.ai/skills/android-style-logo-reveal/install.md",
+      "request": "Install the Android Style Logo Reveal skill from https://omnigami.ai/skills/android-style-logo-reveal/install.md, then: make an Android-style logo reveal for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Social"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/android-style-logo-reveal"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "question-film",
+      "name": "Question film",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Ad",
+      "makes": "Ad (whole film), 30 s, tall",
+      "shapes": [
+        "tall"
+      ],
+      "seconds": 30,
+      "cuts": [
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "Your users’ questions fill the screen, then fold up over your product’s real answers.",
+      "lede": "Your users’ questions fill the screen, then fold up over your product’s real answers. A tall film for products you ask things of. Each question fills the screen in your own input’s style, then folds into a headline as your product’s real answer rises under it, so every answer shows its question.",
+      "goodFor": [
+        "Products you ask things of: assistants, search, booking, support",
+        "A real flow in one film: a request, its answer, an action and its result",
+        "Ads and posts for Reels, TikTok, Shorts and X"
+      ],
+      "asks": [
+        "Your product’s URL, and its app or a demo you can type into",
+        "The requests a real user would type, if you have them in mind",
+        "Your logo as an SVG and your line"
+      ],
+      "files": [
+        "`film/index.html`: The film as one HTML file, built on your product’s captured screens. The three typed requests are named fields; the rest is readable code.",
+        "`out/9x16.mp4`: 30 seconds tall (1080 × 1920) at 30 fps, with the skill’s own song landing on your logo.",
+        "`STORY.md, PRODUCT.md`: Your story, every request with the answer it gets, and every word with its source.",
+        "`out/9x16-poster.png, out/REVIEW.md, out/CAPTION.md`: A poster of your logo, the review notes round by round and a short caption for sharing."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
+      "free": true,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/question-film",
+      "installMd": "https://omnigami.ai/skills/question-film/install.md",
+      "request": "Install the Question film skill from https://omnigami.ai/skills/question-film/install.md, then: make a question film for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Social",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/question-film"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "page Copy install prompt"
+    },
+    {
+      "slug": "verb-sting",
+      "name": "Verb sting",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 13.5 s, wide and tall",
+      "shapes": [
+        "wide",
+        "tall"
+      ],
+      "seconds": 13.5,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        },
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "Short phrases, one per beat, with your app doing each one between the words.",
+      "lede": "Short phrases, one per beat, with your app doing each one between the words. A sting for a product with a few real actions. Short phrases cut on the beat, “Send it.” “Get paid.”, and each one splits as your real screen pops in between its words and does that action, ending on your lockup.",
+      "goodFor": [
+        "Apps with a few real actions: send, approve, book, pay, publish",
+        "A short launch teaser or ad, with your product doing the work",
+        "Posts and pre-roll for X, LinkedIn and YouTube, and Reels, Shorts and TikTok in the tall cut"
+      ],
+      "asks": [
+        "Your product’s URL, and its app or a demo you can click through",
+        "The actions you want shown, if you have them in mind",
+        "Your wordmark and mark as SVGs"
+      ],
+      "files": [
+        "`film/index.html`: The film as one HTML file, built on your product’s captured screens. The phrases are named fields; the rest is readable code.",
+        "`out/16x9.mp4`: The film, wide (1920 × 1080) and tall (1080 × 1920), each laid out for its frame: 13.5 seconds at 30 fps, with the skill’s own song landing on your lockup.",
+        "`STORY.md, PRODUCT.md`: Your story, every phrase with the screen and action it shows, and every word with its source.",
+        "`out/16x9-poster.png, out/REVIEW.md, out/CAPTION.md`: A poster of your lockup, the review notes round by round and a short caption for sharing."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "The skill, $4.99 once. Nothing else beyond your Claude plan’s usage; Node, ffmpeg and the browser are free.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/verb-sting",
+      "installMd": "https://omnigami.ai/skills/verb-sting/install.md",
+      "request": "Install the Verb sting skill from https://omnigami.ai/skills/verb-sting/install.md, then: make a verb sting for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Social",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/verb-sting"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "verb-film",
+      "name": "Verb film",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 9.5 s, wide and tall",
+      "shapes": [
+        "wide",
+        "tall"
+      ],
+      "seconds": 9.5,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        },
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "Six short verbs on the beat, each one acted out by a real piece of your product.",
+      "lede": "Six short verbs on the beat, each one acted out by a real piece of your product. A film for a product with a few things it does. Six short phrases cut on the beat, each acted out by a real piece of your product: an amount ticks up, a draft is sent, a status pill steps on, your list spins onto the phrase.",
+      "goodFor": [
+        "Apps with a clear run of actions: make, send, track, find, get paid",
+        "Short ads, launch teasers and stings with your product doing the work",
+        "Posts for X, LinkedIn and YouTube, and Reels, Shorts and TikTok in the tall cut"
+      ],
+      "asks": [
+        "Your product’s URL, and its app or a demo it can open",
+        "The verbs you want, if you have them in mind",
+        "Your wordmark and mark as SVGs"
+      ],
+      "files": [
+        "`out/16x9.mp4, 9x16.mp4`: The film, wide (1920 × 1080) and tall (1080 × 1920), each laid out for its frame: 9.5 seconds at 30 fps, with the skill’s own song landing on your lockup.",
+        "`film/index.html`: The film as one HTML file, its pieces drawn from your product’s own CSS. The phrases are named fields; the rest is readable code.",
+        "`STORY.md, PRODUCT.md`: Your story, every phrase with the piece of your product that acts it out, and every word and number with its source.",
+        "`out/*-poster.png, out/REVIEW.md, out/CAPTION.md`: Posters of your lockup, the review notes round by round and a short caption for sharing."
+      ],
+      "requirements": [
+        "Claude Code with Opus 5.5",
+        "Node 20 or later",
+        "ffmpeg",
+        "Chrome, Chromium, Edge or Brave"
+      ],
+      "costs": "The skill, $4.99 once. Nothing else beyond your Claude plan’s usage; Node, ffmpeg and the browser are free.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: no"
+      },
+      "page": "https://omnigami.ai/skills/verb-film",
+      "installMd": "https://omnigami.ai/skills/verb-film/install.md",
+      "request": "Install the Verb film skill from https://omnigami.ai/skills/verb-film/install.md, then: make a verb film for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Social",
+        "Website hero"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/verb-film"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "journey-film",
+      "name": "Journey film",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Launch video",
+      "makes": "Launch video (whole film), 29 s, wide and tall",
+      "shapes": [
+        "wide",
+        "tall"
+      ],
+      "seconds": 29,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            16,
+            9
+          ]
+        },
+        {
+          "label": "Tall",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "One journey through your product, one step per shot.",
+      "lede": "One journey through your product, one step per shot. Give it one journey through your product, like sending an invoice or booking a stay. Your real screens play on a photoreal 3D laptop and phone, one step per shot, on bold flat colours, and the steps fill in as they happen, ending on your real result.",
+      "goodFor": [
+        "Software with a clear flow: send, book, pay or publish",
+        "Products with real things to show, from the order to the result",
+        "Product demos, launch posts and landing pages, wide and tall"
+      ],
+      "asks": [
+        "Your product’s URL and an app or demo it can open, with sample data",
+        "The journey to show, who takes each step and anything to avoid",
+        "Your brand assets and closing line; your product photographs if it handles real things"
+      ],
+      "files": [
+        "`out/16x9.mp4, 9x16.mp4`: The film, wide (1920 × 1080) and tall (1080 × 1920), each laid out for its frame, 20–35 seconds at 30 fps, with motion blur and the skill’s song.",
+        "`film/index.html`: The editable film with your real screens on live 3D devices, local assets and words in named fields.",
+        "`PRODUCT.md, STORY.md`: Your product’s journey and the story, step by step on the music’s grid.",
+        "`out/*-poster.png, out/*-sheet.png, out/CAPTION.md, out/REVIEW.md`: A poster, contact sheets, a caption for sharing and the review notes, round by round."
+      ],
+      "requirements": [
+        "An AI coding agent that reads SKILL.md",
+        "Node 20 or later",
+        "ffmpeg",
+        "Python 3 with Pillow, NumPy and SciPy",
+        "A Chrome-family browser with WebGL"
+      ],
+      "costs": "The skill, $7.99 once. Your agent’s usual usage applies; the skill’s song is included.",
+      "free": false,
+      "price": 7.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: yes (Fennick, Larchly; 5 unattended runs)"
+      },
+      "page": "https://omnigami.ai/skills/journey-film",
+      "installMd": "https://omnigami.ai/skills/journey-film/install.md",
+      "request": "Install the Journey film skill from https://omnigami.ai/skills/journey-film/install.md, then: make a Journey film for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Website hero",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo",
+        "Product photos"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/journey-film"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "share-cards",
+      "name": "Share cards",
+      "kind": "images",
+      "output": "images",
+      "outputKind": "Social images",
+      "makes": "Social images: Link previews 2400×1260, X header 1500×500, LinkedIn cover 1584×396, Portrait posts 2160×2700 and Square posts 2160×2160",
+      "shapes": [
+        "square",
+        "wide",
+        "tall"
+      ],
+      "sizes": [
+        {
+          "width": 2400,
+          "height": 1260
+        },
+        {
+          "width": 1500,
+          "height": 500
+        },
+        {
+          "width": 1584,
+          "height": 396
+        },
+        {
+          "width": 2160,
+          "height": 2700
+        },
+        {
+          "width": 2160,
+          "height": 2160
+        }
+      ],
+      "tagline": "A card for every page, made from your real product.",
+      "lede": "A card for every page, made from your real product. Give each link its own preview: your home page, pricing, docs, releases and blog posts. Your agent captures the real screen each page is about, makes a matching set of images in six layouts, and wires the Open Graph and Twitter tags into your site.",
+      "goodFor": [
+        "Sites with docs, releases or a blog: each page gets its own preview",
+        "Launches that need matching link previews, profile headers and release posts",
+        "Keeping new pages covered from one setup in your repo"
+      ],
+      "asks": [
+        "Your site’s repo, built folder or URL, and its public address",
+        "A working app or demo with sample data, and your brand assets",
+        "Your saved OG image maker project, if you have one"
+      ],
+      "files": [
+        "`out/*-og.png`: A 2x link-preview image (2400 × 1260) for every public page, sharp on high-density screens, with its own heading and the real product state it describes.",
+        "`out/home-x.png, home-linkedin.png, *-post.jpg, *-square.jpg`: Matching X and LinkedIn headers, plus portrait and square release posts on request.",
+        "`cards.json, capture-spec.json, review.html`: An editable plan, the capture setup and one review page for the whole set.",
+        "`scripts/new-page.mjs, site meta tags`: Open Graph and Twitter tags in your site’s own templates, and a script to update cards when pages change. New pages need their real screen captured first."
+      ],
+      "requirements": [
+        "An AI coding agent that reads SKILL.md",
+        "Node 20.11 or later",
+        "A Chrome-family browser with WebGL",
+        "Python 3 with Pillow"
+      ],
+      "costs": "The skill, $4.99 once. Your agent’s usual usage applies; no image credits or subscriptions.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "checked by its own image checks (it has no reference film); second-company proof: yes (Fernwise; 2 unattended runs)"
+      },
+      "page": "https://omnigami.ai/skills/share-cards",
+      "installMd": "https://omnigami.ai/skills/share-cards/install.md",
+      "request": "Install the Share cards skill from https://omnigami.ai/skills/share-cards/install.md, then: make Share cards for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Release / what’s new",
+        "Social"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo",
+        "Source code or repo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/share-cards"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "app-store-screenshots",
+      "name": "App Store screenshots",
+      "kind": "images",
+      "output": "images",
+      "outputKind": "App Store screenshots",
+      "makes": "App Store screenshots: App Store 1320×2868",
+      "shapes": [
+        "tall"
+      ],
+      "sizes": [
+        {
+          "width": 1320,
+          "height": 2868
+        }
+      ],
+      "tagline": "Give your app a story before the first tap.",
+      "lede": "Give your app a story before the first tap. Turn your app’s real screens into an eight-image App Store set. Short benefit captions, large photoreal phones and your own colours tell a clear story: what the app does, why it helps and a real result in the first three. Export PNGs in two sizes.",
+      "goodFor": [
+        "An iPhone app’s first App Store listing",
+        "A screenshot refresh after a product update",
+        "A coordinated set in your app’s colours, voice and language"
+      ],
+      "asks": [
+        "A working app, source or demo with access to its real screens",
+        "Your brand assets, audience and the benefits to show",
+        "The store sizes and languages you need"
+      ],
+      "files": [
+        "`out/1320x2868/01.png … 08.png`: Eight ordered RGB PNGs at 1320 × 2868, without an alpha channel.",
+        "`out/1206x2622/01.png … 08.png`: The same story at 1206 × 2622, composed and rendered for that size.",
+        "`images/index.html`: Editable, self-contained HTML with local screens, fonts and device assets; named caption, colour and layout fields.",
+        "`PRODUCT.md, STORY.md, README.md, out/REVIEW.md`: Product and story notes, preview and export instructions, and a review of every image at full size and 300 px wide."
+      ],
+      "requirements": [
+        "An AI coding agent that reads SKILL.md",
+        "Node 20.11 or later",
+        "ffmpeg",
+        "Python 3 with Pillow and NumPy",
+        "A Chrome-family browser with WebGL"
+      ],
+      "costs": "The skill, $4.99 once. Your agent’s usual usage applies; no image credits or subscriptions.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: yes (Whippet; 7 unattended runs)"
+      },
+      "page": "https://omnigami.ai/skills/app-store-screenshots",
+      "installMd": "https://omnigami.ai/skills/app-store-screenshots/install.md",
+      "request": "Install the App Store screenshots skill from https://omnigami.ai/skills/app-store-screenshots/install.md, then: make App Store screenshots from my app’s real screens",
+      "jobs": [
+        "Launch",
+        "Store listing"
+      ],
+      "inputs": [
+        "Working app or demo",
+        "Source code or repo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/app-store-screenshots"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "product-deck",
+      "name": "Product deck",
+      "kind": "deck",
+      "output": "deck",
+      "outputKind": "Product deck",
+      "makes": "Product deck, 16:9 slides",
+      "shapes": [
+        "wide"
+      ],
+      "slideRatio": [
+        16,
+        9
+      ],
+      "tagline": "Give your product the floor.",
+      "lede": "Give your product the floor. Turn your product’s real screens into a deck to present. One benefit per slide, large native details and talking points help you tell a clear story. Present in the browser or export a PDF, an MP4 and a PowerPoint file with editable titles and notes.",
+      "goodFor": [
+        "A live product demo that follows a real workflow",
+        "A launch presentation with benefits proved on screen",
+        "A sales walkthrough with talking points for the presenter"
+      ],
+      "asks": [
+        "Your product URL and access to its real screens",
+        "Your audience, the workflow to cover and the next action",
+        "Your logo, colours, licensed fonts and anything to avoid"
+      ],
+      "files": [
+        "`out/final/html/index.html`: An offline HTML deck with editable source, slide transitions and a presenter view with talking points.",
+        "`out/final/deck.pdf`: A matching 16:9 PDF with selectable titles, embedded fonts and full-resolution product artwork.",
+        "`out/final/deck.mp4`: A silent 1920 × 1080 MP4 with the deck’s slide transitions.",
+        "`out/final/deck.pptx`: A PowerPoint file with editable titles and speaker notes; the real interface stays a full-resolution image on each slide.",
+        "`deck/PRODUCT.md, deck/STORY.md, out/REVIEW.md`: Product and story notes, a review of every slide and transition, and instructions for opening, editing and exporting the deck."
+      ],
+      "requirements": [
+        "An AI coding agent that reads SKILL.md",
+        "Node 20.11 or later",
+        "ffmpeg",
+        "A Chrome-family browser with WebGL",
+        "Python 3 with Pillow, NumPy, SciPy and fontTools",
+        "Poppler for PDF checks"
+      ],
+      "costs": "The skill, $4.99 once. Your agent’s usual usage applies; no rendering credits or extra subscription.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: yes (Lamplit, Veyset; 8 unattended runs)"
+      },
+      "page": "https://omnigami.ai/skills/product-deck",
+      "installMd": "https://omnigami.ai/skills/product-deck/install.md",
+      "request": "Install the Product deck skill from https://omnigami.ai/skills/product-deck/install.md, then: make a product deck to present from my product’s real screens",
+      "jobs": [
+        "Launch",
+        "Pitch / sales",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/product-deck"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "app-store-preview",
+      "name": "App Store preview",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "App preview",
+      "makes": "App preview (whole film), 30 s, tall",
+      "shapes": [
+        "tall"
+      ],
+      "seconds": 30,
+      "cuts": [
+        {
+          "label": "App Store",
+          "ratio": [
+            886,
+            1920
+          ]
+        },
+        {
+          "label": "Social (9:16)",
+          "ratio": [
+            9,
+            16
+          ]
+        }
+      ],
+      "tagline": "Your app’s store preview and a matching tall social film.",
+      "lede": "Your app’s store preview and a matching tall social film. Show what your app helps people do, from the first action to the result. Real app footage fills the store preview, while the social cut pairs it with bold benefit cards and a moving phone. Both use your colours, words and the included song.",
+      "goodFor": [
+        "iPhone apps preparing or refreshing an App Store preview",
+        "A social launch film that matches the store story",
+        "Mobile apps with useful actions and visible results"
+      ],
+      "asks": [
+        "Your app’s URL, runnable build or demo, with sample data",
+        "The job to show and your brand assets",
+        "Which shown features require payment, subscription or sign-in"
+      ],
+      "files": [
+        "`out/886x1920.mp4`: Full-frame store preview, encoded and checked for the 886 × 1920 iPhone slot, with captions and the included song.",
+        "`out/9x16.mp4`: A separately composed 1080 × 1920 social film with benefit cards, a live 3D phone and the same song.",
+        "`film/, PRODUCT.md, STORY.md`: Editable local source, real captures, named copy fields and your product’s story.",
+        "`out/*-poster.png, out/REVIEW.md, out/store-specs.json`: Posters, contact sheets, review notes and the store export report."
+      ],
+      "requirements": [
+        "An AI coding agent that reads SKILL.md",
+        "Node 20 or later",
+        "ffmpeg and ffprobe",
+        "A Chrome-family browser with WebGL"
+      ],
+      "costs": "The skill, $4.99 once. Your agent’s usual usage applies; the song is included. Store submission needs your Apple developer account; Apple decides acceptance.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: yes (Fernwise; 3 unattended runs)"
+      },
+      "page": "https://omnigami.ai/skills/app-store-preview",
+      "installMd": "https://omnigami.ai/skills/app-store-preview/install.md",
+      "request": "Install the App Store preview skill from https://omnigami.ai/skills/app-store-preview/install.md, then: make an App Store preview and matching tall social film for https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Store listing",
+        "Social"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/app-store-preview"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "sales-deck",
+      "name": "Sales deck",
+      "kind": "deck",
+      "output": "deck",
+      "outputKind": "Sales deck",
+      "makes": "Sales deck, 16:9 slides",
+      "shapes": [
+        "wide"
+      ],
+      "slideRatio": [
+        16,
+        9
+      ],
+      "tagline": "A product deck made to send, read and forward.",
+      "lede": "A product deck made to send, read and forward. Turn your product’s real screens into a sales deck that reads on its own. Make one clear argument in your reader’s language, with proof and a next step. Get offline HTML, a PDF, a silent MP4 and a PowerPoint file with editable text.",
+      "goodFor": [
+        "A sales leave-behind that makes sense without a presenter",
+        "A product guide or pre-read to forward to a team",
+        "One product story in the languages your readers need"
+      ],
+      "asks": [
+        "Your product and access to real screens with sample data",
+        "Your reader, their next action and requested languages",
+        "Your logo, colours, licensed fonts and existing localizations"
+      ],
+      "files": [
+        "`out/<lang>/html/index.html`: Offline reading deck with ordered, selectable copy and one working next action.",
+        "`out/<lang>/deck.pdf`: A matching 16:9 reading PDF with embedded fonts and selectable text.",
+        "`out/<lang>/deck.mp4`: A silent 1920 × 1080 whole-page playthrough.",
+        "`out/<lang>/deck.pptx`: Editable titles, body copy and captions over full-resolution native artwork.",
+        "`deck/`: Editable source, capture plans, product/story notes, hashes and final review."
+      ],
+      "requirements": [
+        "An AI coding agent that reads SKILL.md",
+        "Node 20.11+, Chrome and ffmpeg",
+        "Python 3 with Pillow, NumPy, pypdf and fontTools",
+        "Poppler for PDF checks"
+      ],
+      "costs": "The skill, $4.99 once. Your agent’s usual usage applies.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: yes (Lamplit; 1 unattended run)"
+      },
+      "page": "https://omnigami.ai/skills/sales-deck",
+      "installMd": "https://omnigami.ai/skills/sales-deck/install.md",
+      "request": "Install the Sales deck skill from https://omnigami.ai/skills/sales-deck/install.md, then: make a sales deck to send and forward from our real product screens, in German and English.",
+      "jobs": [
+        "Launch",
+        "Pitch / sales",
+        "Product demo"
+      ],
+      "inputs": [
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/sales-deck"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "pitch-deck",
+      "name": "Pitch deck",
+      "kind": "deck",
+      "output": "deck",
+      "outputKind": "Pitch deck",
+      "makes": "Pitch deck, 16:9 slides",
+      "shapes": [
+        "wide"
+      ],
+      "slideRatio": [
+        16,
+        9
+      ],
+      "tagline": "Your product. Your facts. Your pitch.",
+      "lede": "Your product. Your facts. Your pitch. Turn your real product screens and business facts into a fundraising pitch deck. Show the problem, product, market, traction, model, team and ask, with presenter notes and matching HTML, PDF, MP4 and editable PowerPoint titles.",
+      "goodFor": [
+        "Founders preparing an investor presentation",
+        "Teams with a working product and attributable business evidence",
+        "A seed or later round with a defined ask"
+      ],
+      "asks": [
+        "Your product and access to its real screens",
+        "Your business facts, sources, dates, round and proposed ask",
+        "Your logo, colours, licensed fonts, imagery and supplied team portraits"
+      ],
+      "files": [
+        "`out/final/html/index.html`: An offline HTML investor deck with slide transitions and presenter notes.",
+        "`out/final/deck.pdf and deck.mp4`: A matching 16:9 PDF and silent 1920 × 1080 MP4.",
+        "`out/final/deck.pptx`: A standard 16:9 PowerPoint file with full-resolution artwork, editable titles and speaker notes.",
+        "`deck/FACTS.md, deck/PRODUCT.md, deck/STORY.md, out/REVIEW.md`: Editable source, facts ledger, product/story notes, capture provenance, checks and regeneration instructions."
+      ],
+      "requirements": [
+        "An AI coding agent that reads SKILL.md",
+        "Node 20.11 or later",
+        "Chrome and ffmpeg",
+        "Python 3 with Pillow, NumPy and fontTools",
+        "Poppler for PDF checks"
+      ],
+      "costs": "The skill, $4.99 once. Your agent’s usual usage applies.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: yes (Tovra, Larchly; 3 unattended runs)"
+      },
+      "page": "https://omnigami.ai/skills/pitch-deck",
+      "installMd": "https://omnigami.ai/skills/pitch-deck/install.md",
+      "request": "Install the Pitch deck skill from https://omnigami.ai/skills/pitch-deck/install.md, then: make a fundraising pitch deck for https://your-product.com using our supplied business facts",
+      "jobs": [
+        "Pitch / sales"
+      ],
+      "inputs": [
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/pitch-deck"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "launch-kit",
+      "name": "Launch kit",
+      "kind": "images",
+      "output": "images",
+      "outputKind": "Launch kit",
+      "makes": "Launch kit: Portrait carousel 1080×1350, Square carousel 1080×1080, Feed post 1080×1080, Story 1080×1920, X header 1500×500, LinkedIn cover 1584×396 and Link previews 1200×630",
+      "shapes": [
+        "square",
+        "tall",
+        "wide"
+      ],
+      "sizes": [
+        {
+          "width": 1080,
+          "height": 1350
+        },
+        {
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "width": 1500,
+          "height": 500
+        },
+        {
+          "width": 1584,
+          "height": 396
+        },
+        {
+          "width": 1200,
+          "height": 630
+        }
+      ],
+      "tagline": "One launch. Every place you share it.",
+      "lede": "One launch. Every place you share it. Turn one product launch into a coordinated campaign: portrait and square carousels, a LinkedIn PDF, feed and story images, profile headers and link previews. Your real screens prove three benefits, with matching colours, one destination and post copy.",
+      "goodFor": [
+        "Product launches and feature announcements with real screens to prove the benefits",
+        "Teams that need one coordinated campaign across social platforms",
+        "Web products and phone apps with a clear recent change"
+      ],
+      "asks": [
+        "Your product, its launch and a working app or demo with sample data",
+        "Your logo, colours, licensed fonts and product imagery",
+        "One launch destination and the platforms you plan to use"
+      ],
+      "files": [
+        "`carousels/`: Two six-card carousels at 1080 × 1350 and 1080 × 1080, composed separately around three benefits and their real proof.",
+        "`campaign.pdf`: A six-page, full-bleed LinkedIn document from the portrait cards.",
+        "`social/`: A square feed post, tall story, X and personal LinkedIn headers, and four link previews.",
+        "`post-x.txt · post-linkedin.txt`: Matching post copy with one launch destination, checked against the platforms’ text limits.",
+        "`campaign/`: Editable source, product/story notes, real capture plans, checks, review files and a regeneration command."
+      ],
+      "requirements": [
+        "An AI coding agent that reads SKILL.md",
+        "Node 20.11 or later",
+        "Chrome",
+        "Python 3 with Pillow",
+        "Poppler (pdftocairo)"
+      ],
+      "costs": "The skill, $4.99 once. Your agent’s usual usage applies. Any new imagery uses your own generation tool.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: yes (Lamplit, Larchly; 10 unattended runs)"
+      },
+      "page": "https://omnigami.ai/skills/launch-kit",
+      "installMd": "https://omnigami.ai/skills/launch-kit/install.md",
+      "request": "Install the Launch kit skill from https://omnigami.ai/skills/launch-kit/install.md, then: make a launch kit for our latest change to https://your-product.com",
+      "jobs": [
+        "Launch",
+        "Release / what’s new",
+        "Social"
+      ],
+      "inputs": [
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/launch-kit"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    },
+    {
+      "slug": "flow-diagram",
+      "name": "Flow diagram",
+      "kind": "film",
+      "output": "film",
+      "outputKind": "Feature demo",
+      "makes": "Feature demo (whole film), 36 s, wide and tall",
+      "shapes": [
+        "wide",
+        "tall"
+      ],
+      "seconds": 36,
+      "cuts": [
+        {
+          "label": "Wide",
+          "ratio": [
+            1216,
+            1000
+          ]
+        },
+        {
+          "label": "Tall",
+          "ratio": [
+            800,
+            1352
+          ]
+        }
+      ],
+      "tagline": "Show where the work goes, and what changes when it arrives.",
+      "lede": "Show where the work goes, and what changes when it arrives. Show how work moves through your product, from the first request to the result. Your real panels stay connected as signals carry each hand-off, nudge the receiving card and reveal what changed. The route stays clear, even when the diagram is still.",
+      "goodFor": [
+        "Products with a clear flow across three to five real panels",
+        "Docs and READMEs that need to explain how the product works",
+        "Landing pages and launch posts that show the request, the hand-offs and the result"
+      ],
+      "asks": [
+        "Your product’s URL and an app or demo it can open, with sample data",
+        "The flow to show, its real states and actions, and anything to avoid",
+        "Your brand assets and any song you want to supply instead of the included one"
+      ],
+      "files": [
+        "`out/1216x1000.mp4, out/800x1352.mp4, out/*.webm, out/*.gif`: Silent MP4 and WebM loops at 30 fps and looping GIFs at 15 fps, wide (1216 × 1000) and tall (800 × 1352), each laid out for its frame. The length follows your product’s flow.",
+        "`out/*-still.png`: A still PNG in each shape, with the whole route and a real result readable without motion.",
+        "`film/index.html, film/diagram.js`: The editable diagram with your real captures, brand assets and words, ready to preview locally.",
+        "`out/with-song/1216x1000.mp4, out/with-song/800x1352.mp4`: A version with the included song, in both shapes, for posts or pages with sound.",
+        "`PRODUCT.md, STORY.md, film/capture/plan.mjs, out/REVIEW.md`: The flow, story, capture plan and review notes, so your agent can revise the diagram when the product changes."
+      ],
+      "requirements": [
+        "An AI coding agent that reads SKILL.md",
+        "Node 20 or later",
+        "ffmpeg with libvpx for WebM",
+        "Python 3",
+        "A Chrome-family browser"
+      ],
+      "costs": "The skill, $4.99 once. Your agent’s usual usage applies; the skill’s song is included.",
+      "free": false,
+      "price": 4.99,
+      "proof": {
+        "live": "reference passes the repeat check and quick test (last full run 2026-11-05); second-company proof: yes (Veyset; 10 unattended runs)"
+      },
+      "page": "https://omnigami.ai/skills/flow-diagram",
+      "installMd": "https://omnigami.ai/skills/flow-diagram/install.md",
+      "request": "Install the Flow diagram skill from https://omnigami.ai/skills/flow-diagram/install.md, then: make a Flow diagram for https://your-product.com showing one real flow from request to result.",
+      "jobs": [
+        "Launch",
+        "Website hero",
+        "Product demo"
+      ],
+      "inputs": [
+        "Product URL",
+        "Working app or demo"
+      ],
+      "install": {
+        "npx": "npx skills add omnigami-ai/flow-diagram"
+      },
+      "metadataSource": "live install.md and page copy prompt",
+      "platforms": [
+        {
+          "name": "Claude Code",
+          "tested": true
+        },
+        {
+          "name": "Gemini CLI",
+          "tested": false
+        },
+        {
+          "name": "Zed",
+          "tested": false
+        },
+        {
+          "name": "Trae",
+          "tested": false
+        },
+        {
+          "name": "VS Code",
+          "tested": false
+        },
+        {
+          "name": "Antigravity",
+          "tested": false
+        },
+        {
+          "name": "Cursor",
+          "tested": false
+        },
+        {
+          "name": "GitHub Copilot",
+          "tested": false
+        },
+        {
+          "name": "Codex",
+          "tested": false
+        },
+        {
+          "name": "Windsurf",
+          "tested": false
+        },
+        {
+          "name": "Cline",
+          "tested": false
+        },
+        {
+          "name": "OpenCode",
+          "tested": false
+        },
+        {
+          "name": "AMP",
+          "tested": false
+        },
+        {
+          "name": "OpenClaw",
+          "tested": false
+        },
+        {
+          "name": "Droid",
+          "tested": false
+        },
+        {
+          "name": "Goose",
+          "tested": false
+        },
+        {
+          "name": "Kilo",
+          "tested": false
+        },
+        {
+          "name": "Kiro CLI",
+          "tested": false
+        },
+        {
+          "name": "Nous Research",
+          "tested": false
+        },
+        {
+          "name": "Roo",
+          "tested": false
+        }
+      ],
+      "prompt_source": "public install.md Ask line in site copy-prompt format"
+    }
+  ],
+  "tools": [
+    {
+      "id": "og-image-maker",
+      "name": "OG image maker",
+      "url": "https://omnigami.ai/tools/og-image-maker",
+      "makes": "one share image (link preview, square or portrait post, X header, LinkedIn cover) from a screenshot of the user's product",
+      "continuesIn": [
+        "share-cards"
+      ],
+      "free": true,
+      "runs": "in the browser: nothing uploaded, no account, no watermark"
+    },
+    {
+      "id": "device-mockup-maker",
+      "name": "Device mockup maker",
+      "url": "https://omnigami.ai/tools/device-mockup-maker",
+      "makes": "one screenshot on a photoreal laptop or phone, in a chosen angle and light, downloaded as a PNG",
+      "continuesIn": [
+        "device-mockups",
+        "screen-lit-mockups"
+      ],
+      "free": true,
+      "runs": "in the browser: nothing uploaded, no account, no watermark"
+    }
+  ],
+  "toolsPage": "https://omnigami.ai/tools",
+  "contact": "https://omnigami.ai/contact",
+  "provenance": {
+    "publicSource": "https://omnigami.ai/llms.txt",
+    "detailSources": "Public install.md and skill pages; checked against site/src/data/skills.ts",
+    "note": "Only public catalogue facts are bundled. Refreshed 2026-11-07."
+  }
+}

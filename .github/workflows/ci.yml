@@ -1,0 +1,24 @@
+name: CI
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        node: [20, 22, 24]
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node }}
+      - run: perl -e 'alarm shift; exec @ARGV' 180 npm ci
+      - run: perl -e 'alarm shift; exec @ARGV' 60 npm run build
+      - run: git diff --exit-code -- dist
+      - run: perl -e 'alarm shift; exec @ARGV' 60 npm test
+      - run: perl -e 'alarm shift; exec @ARGV' 240 npm run check:snapshot -- --live
+      - run: perl -e 'alarm shift; exec @ARGV' 45 npm run check:registry
+      - if: matrix.node == 24
+        run: perl -e 'alarm shift; exec @ARGV' 480 npm run test:pack

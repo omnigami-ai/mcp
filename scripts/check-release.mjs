@@ -1,0 +1,10 @@
+import { readFile } from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const pkg = JSON.parse(await readFile(new URL('../package.json', import.meta.url), 'utf8'));
+const licence = await readFile(new URL('../LICENSE', import.meta.url), 'utf8');
+assert.equal(pkg.private, undefined, 'Founder authorization required: remove private only after approval');
+assert.ok(pkg.license && !/UNLICENSED|SEE LICENSE/i.test(pkg.license), 'Choose and set the approved SPDX licence');
+assert.ok(!/pending|placeholder|has not been selected/i.test(licence), 'Replace the licence placeholder');
+assert.equal(process.env.GITHUB_REF_NAME, `v${pkg.version}`, 'Version tag must match package.json');
+assert.equal(pkg.publishConfig.access, 'public');
+console.log(`Release gate passed for ${pkg.name} ${pkg.version}`);

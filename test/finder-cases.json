@@ -1,0 +1,386 @@
+{
+  "fictional": true,
+  "cases": [
+    {
+      "id": "free-launch",
+      "request": "Make a launch video for Lamplit, our background-jobs tool, aimed at developers. Wide for our website, about 34 seconds. Show a failed job, its log and the successful replay. Close on npm i lamplit. I have not chosen a visual style and want a free skill.",
+      "product": {
+        "url": "https://lamplit.example"
+      },
+      "constraints": {
+        "ownedSkills": []
+      },
+      "expected": {
+        "status": "recommend",
+        "primary": {
+          "type": "skill",
+          "slug": "product-film",
+          "reason": "The free general launch skill meets the output and shape without a paid style requirement."
+        },
+        "priceUsdAtSnapshot": 0,
+        "access": "free",
+        "installLine": "npx skills add omnigami-ai/product-film",
+        "filledRequest": "Install the Product film skill from https://omnigami.ai/skills/product-film/install.md, then: make a launch video for https://lamplit.example. Use Product film. Make it about 34 seconds in wide for developers running background jobs. Read the supplied local app and brand. Show a failed job, its error log and successful replay; close on npm i lamplit. Use sample data.",
+        "alternative": {
+          "type": "skill",
+          "slug": "whats-new",
+          "reason": "A free release-focused option.",
+          "condition": "The job becomes a version announcement with supplied release notes.",
+          "limitation": "A release roundup has a different structure from this general launch.",
+          "satisfiesOriginal": false
+        },
+        "requiredDisclosures": [],
+        "mustNot": [
+          "Recommend a paid launch style as necessary for quality.",
+          "Install several overlapping film skills.",
+          "Invent release notes or customer success metrics."
+        ]
+      }
+    },
+    {
+      "id": "square-task",
+      "request": "Make a free 16-second square loop showing one task in our tea subscription shop: Your box, skip the next box, choose 10 Dec, save, then show the confirmed next shipping date. Keep one container morphing through the task. This is not a whole launch story.",
+      "product": {
+        "url": "https://fennick.example"
+      },
+      "constraints": {
+        "ownedSkills": []
+      },
+      "expected": {
+        "status": "recommend",
+        "primary": {
+          "type": "skill",
+          "slug": "ui-morph",
+          "reason": "Square-only, one real task and a continuous morph match the request directly."
+        },
+        "priceUsdAtSnapshot": 0,
+        "access": "free",
+        "installLine": "npx skills add omnigami-ai/ui-morph",
+        "filledRequest": "Install the UI morph skill from https://omnigami.ai/skills/ui-morph/install.md, then: make a short film of one task in https://fennick.example. Use UI morph. Deliver the 16-second square loop. Follow the supplied app: Your box, Skip a box, choose 10 Dec, save, and hold the confirmed next shipping date. Keep the product's own order and words; use sample data.",
+        "alternative": {
+          "type": "skill",
+          "slug": "cursor-camera",
+          "reason": "A free scene showing the real task.",
+          "condition": "A wide scene with a cursor camera is acceptable instead of a square morph loop.",
+          "limitation": "Its listed output is wide, so it does not meet the original square requirement.",
+          "satisfiesOriginal": false
+        },
+        "requiredDisclosures": [
+          "UI morph makes square only."
+        ],
+        "mustNot": [
+          "Promise wide or tall UI morph exports.",
+          "Recommend a whole paid launch film."
+        ]
+      }
+    },
+    {
+      "id": "store-video",
+      "request": "We need an iPhone App Store video plus a matching tall social video for Whippet. Show today's running target, the plan, a sample run and its finished result. We have the working app and sample data. We can spend up to $5 on the skill and have not bought one. It must be video, not a screenshot set.",
+      "product": {
+        "url": "https://whippet.example"
+      },
+      "constraints": {
+        "ownedSkills": []
+      },
+      "expected": {
+        "status": "recommend",
+        "primary": {
+          "type": "skill",
+          "slug": "app-store-preview",
+          "reason": "It makes the requested store and matching social cuts; the free general launch film does not provide that store edit."
+        },
+        "priceUsdAtSnapshot": 4.99,
+        "access": "purchase_required",
+        "installLine": "npx skills add omnigami-ai/app-store-preview",
+        "filledRequest": "Install the App Store preview skill from https://omnigami.ai/skills/app-store-preview/install.md, then: make an App Store preview and matching tall social film for https://whippet.example. Use App Store preview with the supplied working app and sample data. Cover today's target, its place in the plan, a sample run and the finished result. Use the packaged portrait store and social cuts. Confirm payment/sign-in restrictions before making feature claims.",
+        "alternative": {
+          "type": "skill",
+          "slug": "app-store-screenshots",
+          "reason": "The alternative for store listing images.",
+          "condition": "The deliverable changes to a still screenshot set.",
+          "limitation": "It does not make either requested video.",
+          "satisfiesOriginal": false
+        },
+        "requiredDisclosures": [
+          "The skill costs $4.99 at this snapshot; purchase and GitHub access are needed before installation.",
+          "The two cuts are portrait, not two different aspect categories."
+        ],
+        "mustNot": [
+          "Claim the free Product film is an App Store preview workflow.",
+          "Guarantee store approval.",
+          "Recommend the unshipped Recording film."
+        ]
+      }
+    },
+    {
+      "id": "light-mockups",
+      "request": "Make free tall still device artwork for Fernwise using our light iPhone layout: a single phone with a product line, and a phone pair showing a plant due for watering and the watered result, on a pale ground. We have only the real phone layout, no desktop app and no dark mode.",
+      "product": {
+        "url": "https://fernwise.example"
+      },
+      "constraints": {
+        "ownedSkills": []
+      },
+      "expected": {
+        "status": "recommend",
+        "primary": {
+          "type": "skill",
+          "slug": "device-mockups",
+          "reason": "The free light-ground set's T1-line and T2 tall looks support this phone-only product: a single phone with a product line and a real action/result pair."
+        },
+        "priceUsdAtSnapshot": 0,
+        "access": "free",
+        "installLine": "npx skills add omnigami-ai/device-mockups",
+        "filledRequest": "Install the Device mockups skill from https://omnigami.ai/skills/device-mockups/install.md, then: make light device mockups from my product\u2019s real screens. Use Device mockups for https://fernwise.example and the supplied local app. Use only the genuine light phone layout, with the due-for-watering state and its watered result. Deliver the T1-line single phone with a product line and the T2 action/result phone pair, both tall at 1080 \u00d7 1920 on a pale ground. Omit the L1 and L2 wide looks, which need a real desktop layout. Do not invent a desktop layout or dark mode.",
+        "alternative": {
+          "type": "tool",
+          "id": "device-mockup-maker",
+          "url": "https://omnigami.ai/tools/device-mockup-maker",
+          "reason": "A free manual mockup from a screenshot.",
+          "condition": "Only one manually composed image is needed.",
+          "limitation": "It does not provide the same automated coordinated set.",
+          "satisfiesOriginal": false
+        },
+        "requiredDisclosures": [
+          "Only the phone hardware should be used for this product; deliver T1-line and T2 tall looks and omit L1/L2 without a desktop layout."
+        ],
+        "mustNot": [
+          "Recommend paid Screen-lit mockups for a light-only app.",
+          "Invent desktop screens or restyle the real UI as dark.",
+          "Promise a phone-only wide look or adapt L1/L2 without a real desktop layout."
+        ]
+      }
+    },
+    {
+      "id": "leave-behind",
+      "request": "Make a product PDF that agency owners can read and forward after a sales conversation. No presenter will explain it. German and English. Show making and sending an invoice, the payment view and the status overview, then invite them to try Tovra. We have sample screens and brand assets, no investor story. Up to $5 for the skill.",
+      "product": {
+        "url": "https://tovra.example"
+      },
+      "constraints": {
+        "ownedSkills": []
+      },
+      "expected": {
+        "status": "recommend",
+        "primary": {
+          "type": "skill",
+          "slug": "sales-deck",
+          "reason": "A self-contained sales leave-behind with requested languages fits Sales deck, rather than a presenter or investor deck."
+        },
+        "priceUsdAtSnapshot": 4.99,
+        "access": "purchase_required",
+        "installLine": "npx skills add omnigami-ai/sales-deck",
+        "filledRequest": "Install the Sales deck skill from https://omnigami.ai/skills/sales-deck/install.md, then: make a sales deck to send and forward from our real product screens, in German and English. Use Sales deck for https://tovra.example. It is for agency owners to read without a presenter. Show the real invoice creation, sending, payment view and status overview with sample data; close with an invitation to try Tovra. Use the supplied app and brand. Do not invent traction or payment integrations.",
+        "alternative": {
+          "type": "skill",
+          "slug": "product-deck",
+          "reason": "A deck built for presenting the workflow live.",
+          "condition": "A presenter will accompany the deck.",
+          "limitation": "Its talking points do not replace a self-read leave-behind.",
+          "satisfiesOriginal": false
+        },
+        "requiredDisclosures": [
+          "The skill costs $4.99 at this snapshot; purchase and GitHub access are needed before installation."
+        ],
+        "mustNot": [
+          "Choose Pitch deck because this is called a sales pitch.",
+          "Infer traction or revenue from sample invoices."
+        ]
+      }
+    },
+    {
+      "id": "investor-pitch",
+      "request": "Make a seed fundraising presentation for Larchly, the materials-board and client-approval app for interior designers. Use only our supplied fictional FACTS.md for business figures and the raise; keep their dates and fictional labels. We have real sample UI. Up to $5 for the skill. This is for investors, not a product demo or customer sales leave-behind.",
+      "product": {
+        "url": "https://larchly.example"
+      },
+      "constraints": {
+        "ownedSkills": []
+      },
+      "expected": {
+        "status": "recommend",
+        "primary": {
+          "type": "skill",
+          "slug": "pitch-deck",
+          "reason": "The job is an investor presentation and the required business evidence is supplied."
+        },
+        "priceUsdAtSnapshot": 4.99,
+        "access": "purchase_required",
+        "installLine": "npx skills add omnigami-ai/pitch-deck",
+        "filledRequest": "Install the Pitch deck skill from https://omnigami.ai/skills/pitch-deck/install.md, then: make a fundraising pitch deck for https://larchly.example using our supplied business facts. Use Pitch deck, cast/larchly/FACTS.md, the working sample app and brand. Present the seed ask and dated business evidence exactly as supplied, labelled fictional. Demonstrate boards, specifications and client approvals. Do not treat the design studio's project spending as Larchly revenue.",
+        "alternative": {
+          "type": "skill",
+          "slug": "product-deck",
+          "reason": "A workflow presentation using real UI.",
+          "condition": "Only a product demonstration is needed.",
+          "limitation": "It does not supply the investor evidence and fundraising structure.",
+          "satisfiesOriginal": false
+        },
+        "requiredDisclosures": [
+          "The skill costs $4.99 at this snapshot; purchase and GitHub access are needed before installation."
+        ],
+        "mustNot": [
+          "Invent traction, a team biography or investor commitments.",
+          "Use sample project order totals as company revenue."
+        ]
+      }
+    },
+    {
+      "id": "presenter-deck",
+      "request": "I will present Veyset live to team leads. Make a 16:9 product presentation with talking points: weekly commitments, recording a decision, then drafting and sharing the Friday update. We have the sample app and brand. I already own Product deck and Sales deck and want to use existing access, spending nothing more. This is not a fundraising or unattended reading deck.",
+      "product": {
+        "url": "https://veyset.example"
+      },
+      "constraints": {
+        "ownedSkills": [
+          "product-deck",
+          "sales-deck"
+        ]
+      },
+      "expected": {
+        "status": "recommend",
+        "primary": {
+          "type": "skill",
+          "slug": "product-deck",
+          "reason": "The presenter-led workflow is the deciding factor; existing ownership satisfies the spending limit."
+        },
+        "priceUsdAtSnapshot": 4.99,
+        "access": "already_owned",
+        "installLine": "npx skills add omnigami-ai/product-deck",
+        "filledRequest": "Install the Product deck skill from https://omnigami.ai/skills/product-deck/install.md, then: make a product deck to present from my product\u2019s real screens. Use Product deck for https://veyset.example. I will present to team leads in 16:9, with talking points. Follow the supplied app from weekly commitments to recording D-018 and drafting, reviewing and explicitly sharing the Friday update. Use sample data and the supplied brand. Keep a recorded decision distinct from completed work.",
+        "alternative": {
+          "type": "skill",
+          "slug": "sales-deck",
+          "reason": "An already-owned self-read deck.",
+          "condition": "The presentation instead needs to be sent for reading without a presenter.",
+          "limitation": "Its denser self-contained reading structure is a different job.",
+          "satisfiesOriginal": false
+        },
+        "requiredDisclosures": [
+          "Product deck is paid, but the user already owns it; no new purchase is needed."
+        ],
+        "mustNot": [
+          "Demand a new purchase or pass.",
+          "Choose an investor pitch deck.",
+          "Claim an unblocked priority is already complete."
+        ]
+      }
+    },
+    {
+      "id": "release-roundup",
+      "request": "Make one free release video, in wide, square and tall, from this Ostlery release note: Dark appearance. Show choosing light, dark or system in the real settings screen and the chat in the chosen theme. This is our repeatable release-video format, not a tiny silent loop. The app and brand are available. Close with \u201cTry Ostlery\u201d.",
+      "product": {
+        "url": "https://ostlery.example"
+      },
+      "constraints": {
+        "ownedSkills": []
+      },
+      "expected": {
+        "status": "recommend",
+        "primary": {
+          "type": "skill",
+          "slug": "whats-new",
+          "reason": "The free release-roundup workflow takes release notes and makes all three requested shapes."
+        },
+        "priceUsdAtSnapshot": 0,
+        "access": "free",
+        "installLine": "npx skills add omnigami-ai/whats-new",
+        "filledRequest": "Install the What\u2019s new skill from https://omnigami.ai/skills/whats-new/install.md, then: make a what\u2019s-new video for our latest release of https://ostlery.example. Use What\u2019s new. The supplied release note is \u201cDark appearance\u201d. Demonstrate light, dark and system appearance in the real settings and chat screens, with sample data. Use wide, square and tall; close on \u201cTry Ostlery\u201d. Do not invent a version number or a second release entry.",
+        "alternative": {
+          "type": "skill",
+          "slug": "product-film",
+          "reason": "A free general launch story in all three shapes.",
+          "condition": "The emphasis changes to introducing the product rather than a repeatable release roundup.",
+          "limitation": "It is less specific to release notes.",
+          "satisfiesOriginal": false
+        },
+        "requiredDisclosures": [],
+        "mustNot": [
+          "Install or recommend Changelog clips while it is absent from the published catalogue.",
+          "Invent a version identifier.",
+          "Promise unbuilt comparison UI.",
+          "Borrow the unmerged price-list/comparison change from another checkout."
+        ]
+      }
+    },
+    {
+      "id": "one-share-image",
+      "request": "I need just one 1200 \u00d7 630 link-preview image for Upshot from the supplied screenshot and our line \u201cThe meeting, down to what matters.\u201d I can do it manually in a free browser tool. No repo changes, batch generation or ongoing per-page setup. Budget is zero.",
+      "product": {
+        "url": "https://upshot.example"
+      },
+      "constraints": {
+        "ownedSkills": []
+      },
+      "expected": {
+        "status": "tool",
+        "primary": {
+          "type": "tool",
+          "id": "og-image-maker",
+          "url": "https://omnigami.ai/tools/og-image-maker",
+          "reason": "One manual screenshot-based image is covered by the free browser tool; a paid per-page skill adds unrequested work."
+        },
+        "priceUsdAtSnapshot": 0,
+        "access": "free",
+        "installLine": null,
+        "filledRequest": null,
+        "nextStep": "Open the OG image maker, choose the link-preview size, load the supplied Upshot screenshot, use \u201cThe meeting, down to what matters.\u201d, and download the image. No skill installation is needed.",
+        "alternative": {
+          "type": "skill",
+          "slug": "share-cards",
+          "reason": "Automatic per-page cards and related social sizes.",
+          "condition": "The job expands to repeatable cards for many pages and a paid skill is acceptable.",
+          "limitation": "It costs $4.99 at this snapshot, requires buyer access, and is unnecessary for the original single-image request.",
+          "satisfiesOriginal": false
+        },
+        "requiredDisclosures": [
+          "The recommended tool is free and needs no account.",
+          "Share cards is a conditional paid alternative, outside the current zero budget."
+        ],
+        "mustNot": [
+          "Install a skill or purchase anything.",
+          "Recommend a pass or subscription.",
+          "Claim a generator has already made or downloaded the image."
+        ]
+      }
+    },
+    {
+      "id": "recording-only",
+      "request": "I only have the supplied Whippet screen-recording MP4. Keep its exact footage and edit it into a 20-second tall film inside a photoreal phone, with camera close-ups. There is no app access, source, screenshot set or permission to rebuild or recapture. I can spend up to $10 on a skill. Which published skill accepts my recording?",
+      "product": {
+        "url": "https://whippet.example"
+      },
+      "constraints": {
+        "ownedSkills": []
+      },
+      "expected": {
+        "status": "no_match",
+        "primary": null,
+        "priceUsdAtSnapshot": null,
+        "access": "not_applicable",
+        "installLine": null,
+        "filledRequest": null,
+        "nextStep": "No skill in the pinned published catalogue accepts the supplied recording as this workflow. Keep the MP4; ask whether access to the app and a newly captured device film would be acceptable. If not, there is no matching published skill to install.",
+        "alternative": {
+          "type": "skill",
+          "slug": "device-film",
+          "reason": "A tall hardware-style film from newly captured real app screens.",
+          "condition": "The user supplies a runnable app/demo and explicitly accepts new footage instead of preserving the MP4.",
+          "limitation": "It costs $7.99 at this snapshot and needs buyer access; it cannot satisfy the original recording-only brief.",
+          "satisfiesOriginal": false
+        },
+        "requiredDisclosures": [
+          "Recording film is still in development at this snapshot and is not an installable catalogue option.",
+          "Device film requires app/demo access and is not a recording editor."
+        ],
+        "mustNot": [
+          "Invent a recording-film install command.",
+          "Claim Device film accepts the MP4.",
+          "Extract frames and pretend this preserves the supplied recording workflow.",
+          "Present a paid purchase as solving the original brief."
+        ]
+      }
+    }
+  ]
+}

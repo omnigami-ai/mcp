@@ -1,0 +1,53 @@
+{
+  "name": "@omnigami-ai/mcp",
+  "version": "0.1.0",
+  "description": "Read-only local MCP server for omnigami's public skill catalogue",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "omnigami-mcp": "dist/src/server.mjs"
+  },
+  "files": [
+    "dist/src/*.mjs",
+    "dist/data/catalogue.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node dist/src/server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check:snapshot": "node scripts/check-snapshot.mjs",
+    "check:registry": "node scripts/registry.mjs",
+    "registry:generate": "node scripts/registry.mjs --generate",
+    "prepack": "npm run build",
+    "test:pack": "node scripts/pack-smoke.mjs",
+    "check:release": "node scripts/check-release.mjs",
+    "snapshot": "node scripts/snapshot.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "esbuild": "0.28.2"
+  },
+  "mcpName": "io.github.omnigami-ai/mcp",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omnigami-ai/mcp.git"
+  },
+  "homepage": "https://github.com/omnigami-ai/mcp#readme",
+  "bugs": {
+    "url": "https://github.com/omnigami-ai/mcp/issues"
+  }
+}
