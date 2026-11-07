@@ -1,0 +1,20 @@
+# Publishes publishing/server.json to the official MCP Registry as io.github.omnigami-ai/mcp. The registry checks the
+# organisation through GitHub's OIDC token, so no secret is stored. Run it by hand after the npm version is live.
+name: MCP Registry
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install mcp-publisher
+        run: |
+          curl -fsSL "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz" | tar xz mcp-publisher
+      - name: Log in with GitHub OIDC
+        run: ./mcp-publisher login github-oidc
+      - name: Publish
+        run: ./mcp-publisher publish publishing/server.json
