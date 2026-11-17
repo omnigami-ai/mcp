@@ -2,7 +2,7 @@ import { fileURLToPath } from 'node:url';
 import { cp, mkdir, rm, chmod } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 process.chdir(fileURLToPath(new URL('..', import.meta.url)));
-for (const file of ['catalogue', 'search', 'compound', 'recommend', 'server']) execFileSync(process.execPath, ['--check', `src/${file}.mjs`]);
+for (const file of ['catalogue', 'search', 'compound', 'recommend', 'server', 'skills', 'skills-protocol']) execFileSync(process.execPath, ['--check', `src/${file}.mjs`]);
 await rm('dist', { recursive: true, force: true });
 await mkdir('dist/data', { recursive: true });
 await cp('src', 'dist/src', { recursive: true });

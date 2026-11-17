@@ -2,6 +2,7 @@ import { readFile } from 'node:fs/promises';
 
 export const ORIGIN = 'https://omnigami.ai';
 export const LLMS = `${ORIGIN}/llms.txt`;
+export const SKILL_INDEX = `${ORIGIN}/.well-known/agent-skills/index.json`;
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 export const validSlug = (slug) => typeof slug === 'string' && slug.length <= 100 && slugPattern.test(slug);
 export const decode = (s) => s.replace(/&(?:amp|quot|apos|lt|gt|#\d+|#x[\da-f]+);/gi, (v) => {
@@ -90,11 +91,12 @@ export function parseDetails(md, html, row) {
     prompt_source: promptSource, files: bullets(section(md, 'What it makes')), metadataSource: 'live install.md and page copy prompt' };
 }
 
-// Fixed-origin, bounded GETs only. No product URLs, jobs, analytics, account calls or persistent runtime cache.
-export async function publicGet(url, { fetchImpl = fetch, timeoutMs = 4000 } = {}) {
-  if (!(url === LLMS || /^https:\/\/omnigami\.ai\/skills\/[a-z0-9-]+(?:\/install\.md)?$/.test(url))) throw new Error('Not a public catalogue URL');
+// Fixed public URLs only. Archive bytes have their own bounded budget; redirects stay forbidden.
+export async function publicBytes(url, { fetchImpl = fetch, timeoutMs = 4000 } = {}) {
+  const archive = /^https:\/\/media\.omnigami\.ai\/m\/skills\/[a-z0-9]+(?:-[a-z0-9]+)*\.tar\.gz$/.test(url);
+  if (!(url === LLMS || url === SKILL_INDEX || archive || /^https:\/\/omnigami\.ai\/skills\/[a-z0-9-]+(?:\/install\.md)?$/.test(url))) throw new Error('Not a public catalogue URL');
   const res = await fetchImpl(url, { signal: AbortSignal.timeout(timeoutMs), redirect: 'error', credentials: 'omit',
-    headers: { Accept: 'text/plain, text/markdown, text/html' } });
+    headers: { Accept: archive ? 'application/gzip' : 'text/plain, text/markdown, text/html, application/json' } });
   if (!res.ok) throw new Error(`Public catalogue HTTP ${res.status}`);
   const reader = res.body.getReader();
   const chunks = []; let size = 0;
@@ -103,11 +105,14 @@ export async function publicGet(url, { fetchImpl = fetch, timeoutMs = 4000 } = {
       const { value, done } = await reader.read();
       if (done) break;
       size += value.byteLength;
-      if (size > 1_500_000) throw new Error('Public page too large');
+      if (size > (archive ? 50 * 1024 * 1024 : 1_500_000)) throw new Error('Public page or archive too large');
       chunks.push(value);
     }
   } finally { await reader.cancel().catch(() => {}); }
-  return new TextDecoder().decode(Buffer.concat(chunks));
+  return Buffer.concat(chunks);
+}
+export async function publicGet(url, options) {
+  return new TextDecoder().decode(await publicBytes(url, options));
 }
 
 export class Catalogue {

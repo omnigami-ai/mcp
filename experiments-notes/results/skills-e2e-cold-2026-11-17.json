@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-17T21:20:15.978Z",
+  "node": "v23.1.0",
+  "skills": [
+    {
+      "name": "product-film",
+      "complete": true,
+      "files": 103,
+      "binaryFiles": 60,
+      "decodedBytes": 28659777,
+      "archiveBytes": 26905101,
+      "digest": "sha256:5aa2f5dbcdef1b4e021a09446b1a4e31d86a0c1f7ba09b80b7ed83a8a2af3d13",
+      "seconds": 0.7593690419999984,
+      "responseWireBytes": 38033553,
+      "requestWireBytes": 38731,
+      "largestResponseWireBytes": 5200593,
+      "baselineLimitExceeded": true
+    },
+    {
+      "name": "whats-new",
+      "complete": true,
+      "files": 264,
+      "binaryFiles": 194,
+      "decodedBytes": 42838556,
+      "archiveBytes": 40353209,
+      "digest": "sha256:4e2688c4c1fca4d6de4866ca64e10680811c15c6383b987c575fc406ac2317ca",
+      "seconds": 0.9067376249999943,
+      "responseWireBytes": 56970497,
+      "requestWireBytes": 100681,
+      "largestResponseWireBytes": 5200591,
+      "baselineLimitExceeded": true
+    }
+  ],
+  "indexNames": [
+    "skill-finder",
+    "device-mockups",
+    "product-film",
+    "ui-morph",
+    "chat-launch",
+    "language-launch",
+    "milestone",
+    "illustrated-ad",
+    "whats-new",
+    "product-reel",
+    "end-card",
+    "cursor-camera",
+    "android-style-logo-reveal",
+    "question-film",
+    "changelog-clips"
+  ],
+  "list": {
+    "count": 15,
+    "seconds": 31.081364999999998,
+    "responseWireBytes": 267538,
+    "manifests": [
+      {
+        "name": "skill-finder",
+        "files": 3,
+        "bytes": 115733
+      },
+      {
+        "name": "device-mockups",
+        "files": 131,
+        "bytes": 29507317
+      },
+      {
+        "name": "product-film",
+        "files": 103,
+        "bytes": 28659777
+      },
+      {
+        "name": "ui-morph",
+        "files": 77,
+        "bytes": 23669735
+      },
+      {
+        "name": "chat-launch",
+        "files": 154,
+        "bytes": 27378533
+      },
+      {
+        "name": "language-launch",
+        "files": 81,
+        "bytes": 21055265
+      },
+      {
+        "name": "milestone",
+        "files": 102,
+        "bytes": 22710220
+      },
+      {
+        "name": "illustrated-ad",
+        "files": 79,
+        "bytes": 24256646
+      },
+      {
+        "name": "whats-new",
+        "files": 264,
+        "bytes": 42838556
+      },
+      {
+        "name": "product-reel",
+        "files": 135,
+        "bytes": 29830399
+      },
+      {
+        "name": "end-card",
+        "files": 67,
+        "bytes": 22700903
+      },
+      {
+        "name": "cursor-camera",
+        "files": 97,
+        "bytes": 24653462
+      },
+      {
+        "name": "android-style-logo-reveal",
+        "files": 68,
+        "bytes": 16001620
+      },
+      {
+        "name": "question-film",
+        "files": 130,
+        "bytes": 26020329
+      },
+      {
+        "name": "changelog-clips",
+        "files": 108,
+        "bytes": 27388520
+      }
+    ]
+  }
+}

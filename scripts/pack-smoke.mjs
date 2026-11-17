@@ -22,7 +22,7 @@ try {
   await mkdir(source); await mkdir(consumer);
   for (const item of ['src', 'data', 'scripts', 'package.json', 'package-lock.json', 'README.md', 'LICENSE']) await cp(path.join(root, item), path.join(source, item), { recursive: true });
   const [packed] = JSON.parse(npmRun(['pack', '--json'], source));
-  const expectedFiles = ['LICENSE', 'README.md', 'package.json', 'dist/data/catalogue.json', ...['catalogue', 'compound', 'recommend', 'search', 'server'].map((f) => `dist/src/${f}.mjs`)];
+  const expectedFiles = ['LICENSE', 'README.md', 'package.json', 'dist/data/catalogue.json', ...['catalogue', 'compound', 'recommend', 'search', 'server', 'skills', 'skills-protocol'].map((f) => `dist/src/${f}.mjs`)];
   assert.deepEqual(packed.files.map((f) => f.path).sort(), expectedFiles.sort(), 'Unexpected npm artifact contents');
   npmRun(['install', '--prefix', consumer, '--ignore-scripts', '--no-audit', '--no-fund', path.join(source, packed.filename)], consumer);
   const bin = path.join(consumer, 'node_modules/.bin/omnigami-mcp');

@@ -1,0 +1,80 @@
+[
+  {
+    "run": "finder",
+    "client": "MCP Inspector 2.14.0",
+    "node": "24.22.1",
+    "uri": "skill://skill-finder/SKILL.md",
+    "outcome": "verified",
+    "filesChecked": 3,
+    "conformance": [],
+    "incomplete": null,
+    "exitCode": 0
+  },
+  {
+    "run": "modern",
+    "client": "MCP Inspector 2.14.0",
+    "node": "24.22.1",
+    "uri": "skill://skill-finder/SKILL.md",
+    "outcome": "verified",
+    "filesChecked": 3,
+    "conformance": [],
+    "incomplete": null,
+    "exitCode": 0
+  },
+  {
+    "run": "legacy",
+    "client": "MCP Inspector 2.14.0",
+    "node": "24.22.1",
+    "uri": "skill://skill-finder/SKILL.md",
+    "outcome": "verified",
+    "filesChecked": 3,
+    "conformance": [],
+    "incomplete": null,
+    "exitCode": 0
+  },
+  {
+    "run": "product",
+    "client": "MCP Inspector 2.14.0",
+    "node": "24.22.1",
+    "uri": "skill://product-film/SKILL.md",
+    "outcome": "incomplete",
+    "filesChecked": 15,
+    "conformance": [
+      {
+        "code": "size-limit-exceeded",
+        "severity": "warning",
+        "message": "Skill resources total 28659777 bytes, above the 16777216-byte (16 MiB) interoperability limit; a host is only required to support up to it."
+      }
+    ],
+    "incomplete": "Stopped after 14 of 103 manifest entries: the files actually served exceed the 16777216-byte interoperability limit, whatever sizes the manifest declared.",
+    "exitCode": 8
+  },
+  {
+    "run": "whats-new",
+    "client": "MCP Inspector 2.14.0",
+    "node": "24.22.1",
+    "uri": "skill://whats-new/SKILL.md",
+    "outcome": "incomplete",
+    "filesChecked": 118,
+    "conformance": [
+      {
+        "code": "size-limit-exceeded",
+        "severity": "warning",
+        "message": "Skill resources total 42838556 bytes, above the 16777216-byte (16 MiB) interoperability limit; a host is only required to support up to it."
+      }
+    ],
+    "incomplete": "Only 117 of 264 manifest entries were read: the skill exceeds the 512-entry / 16777216-byte interoperability limits, so the rest were not fetched and cannot be reported on.",
+    "exitCode": 8
+  },
+  {
+    "run": "logo",
+    "client": "MCP Inspector 2.14.0",
+    "node": "24.22.1",
+    "uri": "skill://android-style-logo-reveal/SKILL.md",
+    "outcome": "incomplete",
+    "filesChecked": 16,
+    "conformance": [],
+    "incomplete": "Stopped after 15 of 68 manifest entries: the files actually served exceed the 16777216-byte interoperability limit, whatever sizes the manifest declared.",
+    "exitCode": 8
+  }
+]

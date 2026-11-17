@@ -86,10 +86,50 @@ that button, so their public install.md Ask line is wrapped in the site's same
 prompt format; `prompt_source` identifies this fallback.
 
 The bundle contains 36 public skills, checked on 2026-11-07. No keys, accounts,
-analytics or runtime disk cache. Jobs and product URLs are never sent to the
+analytics. Jobs and product URLs are never sent to the
 site. `product_url` only fills the returned request. The runtime reads its own
 installed modules/data, never the user's product repo or credentials. Your host
 client controls its own model usage and conversation storage.
+
+## Skills over MCP experiment (branch only)
+
+This branch adds SEP-2640 (`io.modelcontextprotocol/skills`). Nothing is released.
+The three catalogue tools keep their existing behavior. `skills/list` pages through
+the free discovery index, `skills/get` returns a complete file manifest, and
+`resources/read` serves every file as lossless UTF-8 text or a base64 binary blob.
+This is delivery only; the host decides whether to activate a skill and approve execution.
+
+Only the fixed index and its skill archive paths are additional network destinations.
+Archive SHA-256 verification precedes in-memory extraction. Absolute paths, traversal,
+links and special entries are refused. Limits are 50 MiB unpacked and 1,000 files.
+Verified compressed archives are cached per digest in the user's cache directory
+(`~/Library/Caches/omnigami-mcp/skills` on macOS), outside skill discovery paths.
+Disk bytes are rehashed when loaded. One unpacked skill stays in memory. `--offline`
+returns an empty skill listing and never reads the archive cache or fetches skill files.
+
+The extension guarantees host support only up to 16 MiB / 512 files. Thirteen of the
+15 current free archives exceed that size. This experimental branch deliberately serves
+their **whole** manifests with an explicit size warning to measure transport, not to
+claim client compatibility. The SDK byte-rebuild test passes, while Inspector's
+bounded verifier reports the large skills as incomplete. No files are omitted.
+
+An empty cache must download all archives (about 338 MB) to build all 15 manifests;
+pagination returns one skill at a time. Archives are not added to the npm package.
+No cache pruning is implemented. Remove the cache directory to clear it.
+
+```sh
+npm ci
+npm run build
+npm test
+node scripts/skills-e2e.mjs
+```
+
+The last command uses the live index and SDK stdio client, rebuilds Product film
+and What's new into temporary folders, compares every file against independent
+archive extraction, prints time/byte counts, and removes the temporary folders.
+It leaves verified archives in the user's cache. Detailed compatibility findings
+and VS Code test steps are in
+[the experiment report](experiments-notes/skills-over-mcp-2026-11-17.md).
 
 ## Develop locally
 
