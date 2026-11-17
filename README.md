@@ -4,10 +4,10 @@ Find an omnigami skill from your agent: search the public catalogue, get its
 install prompt, or describe the job for a free-first recommendation. Runs locally
 over stdio. It never buys, installs or generates a deliverable.
 
-**Release candidate 0.1.0, not yet on npm.** The install lines below work once
-`@omnigami-ai/mcp` is published. MIT licensed ([LICENSE](LICENSE)).
+On npm as [`@omnigami-ai/mcp`](https://www.npmjs.com/package/@omnigami-ai/mcp) and in the MCP Registry as
+`io.github.omnigami-ai/mcp`. MIT licensed ([LICENSE](LICENSE)).
 
-## Install — once published
+## Install
 
 Requires Node 20+ and npm. The package starts with:
 
@@ -91,7 +91,7 @@ site. `product_url` only fills the returned request. The runtime reads its own
 installed modules/data, never the user's product repo or credentials. Your host
 client controls its own model usage and conversation storage.
 
-## Develop locally — available now
+## Develop locally
 
 From this source folder:
 
@@ -104,7 +104,7 @@ npm run check:registry
 node dist/src/server.mjs --offline
 ```
 
-The server waits for MCP messages on stdin. For an unpublished client setup,
+The server waits for MCP messages on stdin. To run a client from this source,
 replace the `npx` entry with absolute Node and `dist/src/server.mjs` paths.
 
 `check:snapshot` compares every bundled skill's price, availability, install
