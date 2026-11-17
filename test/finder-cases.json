@@ -355,13 +355,16 @@
         "ownedSkills": []
       },
       "expected": {
-        "status": "no_match",
-        "primary": null,
-        "priceUsdAtSnapshot": null,
-        "access": "not_applicable",
-        "installLine": null,
-        "filledRequest": null,
-        "nextStep": "No skill in the pinned published catalogue accepts the supplied recording as this workflow. Keep the MP4; ask whether access to the app and a newly captured device film would be acceptable. If not, there is no matching published skill to install.",
+        "status": "recommend",
+        "primary": {
+          "type": "skill",
+          "slug": "recording-film",
+          "reason": "The 2026-11-17 published catalogue explicitly accepts an app screen recording and makes tall photoreal-phone films with camera close-ups; $4.99 is within the $10 budget. The old no-match intent applied before this skill was published."
+        },
+        "priceUsdAtSnapshot": 4.99,
+        "access": "purchase_with_connected_github",
+        "installLine": "npx skills add omnigami-ai/recording-film",
+        "filledRequest": "Install the Recording film skill from https://omnigami.ai/skills/recording-film/install.md, then: make a Recording film from my app\u2019s screen recording, or record one complete task in my web app\u2019s phone layout. Use Recording film. Product: https://whippet.example. Use only the supplied Whippet MP4, preserve its footage and make a tall photoreal-phone film with camera close-ups. Target 20 seconds; confirm this against the recording length, since the film follows the recording. No app access or permission to rebuild or recapture.",
         "alternative": {
           "type": "skill",
           "slug": "device-film",
@@ -371,14 +374,15 @@
           "satisfiesOriginal": false
         },
         "requiredDisclosures": [
-          "Recording film is still in development at this snapshot and is not an installable catalogue option.",
-          "Device film requires app/demo access and is not a recording editor."
+          "Recording film costs $4.99 once at this snapshot and requires purchase with a connected GitHub account before installation; confirm the current price when offline.",
+          "The film length follows the recording; the 20-second target must be checked against the clip rather than promised through retiming or interior trims.",
+          "Device film remains conditional on app/demo access and permission for new footage."
         ],
         "mustNot": [
-          "Invent a recording-film install command.",
+          "Claim app access or a recapture is required when a recording is supplied.",
           "Claim Device film accepts the MP4.",
           "Extract frames and pretend this preserves the supplied recording workflow.",
-          "Present a paid purchase as solving the original brief."
+          "Promise an exact 20-second duration without checking the recording or retime the footage to force it."
         ]
       }
     }

@@ -13,9 +13,10 @@ const alternate = {
   'whats-new': ['product-film', 'if the goal changes to introducing the product', 'is a general launch story rather than a release roundup'],
   'tool:og-image-maker': ['share-cards', 'if you expand to repeatable cards for many pages and can pay for a skill', 'adds an automated per-page workflow'],
   'tool:device-mockup-maker': ['device-mockups', 'if you can provide a working app and need a coordinated light set', 'requires real app access for capture'],
-  recording: ['device-film', 'if you provide a runnable app and explicitly accept newly captured footage', 'does not preserve your supplied MP4'],
+  'recording-film': ['device-film', 'if you provide a runnable app and explicitly accept newly captured footage', 'does not preserve your supplied MP4'],
 };
 const fit = {
+  recording: 'accepts your supplied screen recording and plays it on a photoreal phone with camera close-ups',
   launch: 'is the free general launch-film choice for introducing a product with its real screens',
   morph: 'makes the square, continuous-container task film you described',
   'store-video': 'makes an App Store cut and matching tall social video',
@@ -31,6 +32,7 @@ const fit = {
   diagram: 'shows a product workflow as a filmed diagram',
   terminal: 'is built around a real terminal workflow',
 };
+const acceptsRecording = (s) => /screen.recording|supplied.*mp4/i.test((s.asks ?? []).join(' '));
 const sentence = (s) => `${s.replace(/[.!?]+$/, '')}.`;
 export function constraintsOf(job, skills) {
   const lower = job.toLowerCase().replaceAll('×', 'x');
@@ -76,14 +78,6 @@ export function choose(data, job, productUrl) {
       question: `Which should come first: ${labels.slice(0, -1).join(', ')} or ${labels.at(-1)}?`, choices,
       alternative: null, next_step: 'Reply with one of the named choices and send its requirements as a separate job.' };
   }
-  if (intent === 'recording') {
-    // A future live catalogue may explicitly add a recording input; do not invent one today.
-    const accepts = data.skills.filter((s) => /screen.recording|supplied.*mp4/i.test([...(s.asks ?? []), ...(s.inputs ?? [])].join(' ')));
-    if (!accepts.length) return { ...base, status: 'no_match', pick: null,
-      reasons: 'No published skill in this catalogue lists a supplied screen recording as an input. Preserving your MP4 without app access therefore has no verified match.',
-      alternative: alternativeFor('recording', data, c.owned), next_step: data.contact };
-    return { ...base, status: 'needs_clarification', pick: null, reasons: 'The live catalogue now lists a recording input. Confirm which listed skill preserves the exact footage before selecting it.', alternative: null, next_step: accepts.map(summary) };
-  }
   if (intent === 'one-image' || (intent === 'light-mockups' && /\b(one|single|just one)\b/i.test(job) && /manual|browser tool/i.test(job))) {
     const id = intent === 'one-image' ? 'og-image-maker' : 'device-mockup-maker';
     const tool = data.tools.find((t) => t.id === id);
@@ -109,13 +103,15 @@ export function choose(data, job, productUrl) {
     if (!s.free && !c.owned.includes(slug) && s.price > c.budget) blocked.push(`The $${s.price.toFixed(2)} price exceeds your stated budget`);
     if (c.shapes.some((shape) => !s.shapes.includes(shape))) blocked.push(`The catalogue does not list every requested shape for ${s.name}`);
     if (c.sizes.some(([w,h]) => s.kind === 'images' && !s.sizes?.some((v) => v.width === w && v.height === h))) blocked.push(`The catalogue does not list every exact image size you requested`);
-    if (/only (?:have |the |supplied )?(?:screenshots?|captures)|no app access/i.test(job) && !/supplied.*captures/i.test((s.asks ?? []).join(' '))) blocked.push('This brief lacks the app access listed for capturing the product');
+    if (intent === 'recording' && !acceptsRecording(s)) blocked.push('The skill does not list a supplied screen recording as an input');
+    if (!(intent === 'recording' && acceptsRecording(s)) && /only (?:have |the |supplied )?(?:screenshots?|captures)|no app access/i.test(job) && !/supplied.*captures/i.test((s.asks ?? []).join(' '))) blocked.push('This brief lacks the app access listed for capturing the product');
     if (/no (?:business )?(?:facts|figures)|no traction|invent .*figures/i.test(job) && slug === 'pitch-deck') blocked.push('The investor deck needs supplied business facts');
   }
   if (blocked.length) return { ...base, status: 'no_match', pick: null,
     reasons: `${sentence(blocked.join('; '))} Change that requirement before using this candidate.`,
     alternative: s ? { type: 'skill', ...summary(s), condition: 'if you resolve the stated budget, shape or input conflict', tradeoff: blocked.join('; ') } : null,
     next_step: data.contact };
+  if (intent === 'recording') notes.push('The film length follows the supplied recording; confirm the requested duration against the clip before planning cuts.');
   if (slug === 'device-mockups' && /no desktop|only .*phone|phone.only/i.test(job)) notes.push('Use the tall phone looks only; omit wide laptop looks without a real desktop layout.');
   if (slug === 'pitch-deck') notes.push('Use only supplied, dated business facts; sample UI figures are not company traction.');
   if (slug === 'sales-deck' && /German|English/i.test(job)) notes.push('Keep the requested language versions; confirm localized screens with the skill.');

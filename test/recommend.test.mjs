@@ -32,7 +32,7 @@ for (const [job, status] of [
 ]) test(`hard constraint: ${job}`, async () => assert.equal((await recommend(new Catalogue(snapshot, { offline: true }), job)).status, status));
 test('offline paid reason dates the unverified price', async () => {
   const answer=await recommend(new Catalogue(snapshot,{offline:true}),'Make an App Store video from my working app, budget $5');
-  assert.match(answer.reasons,/catalogue dated 2026-11-07/);
+  assert.ok(answer.reasons.includes(`catalogue dated ${snapshot.generated}; confirm the current price on its page`));
 });
 test('a named still skill cannot satisfy a video job', async () => {
   const answer=await recommend(new Catalogue(snapshot,{offline:true}),'Use App Store screenshots. I need an App Store video, not a screenshot set.');
@@ -46,4 +46,38 @@ test('recommendations outside the baseline still include a conditional alternati
     const answer=await recommend(new Catalogue(snapshot,{offline:true}),job);
     assert.equal(answer.status,'recommend'); assert.ok(answer.alternative?.condition);
   }
+});
+
+const recordingCase = fixtures.cases.find((c) => c.id === 'recording-only');
+const recordingJob = recordingCase.request;
+test('recording-only gives the verified price, conditional alternative and duration caveat', async () => {
+  const answer = await recommend(new Catalogue(snapshot, { offline: true }), recordingJob);
+  assert.equal(answer.pick.price_usd, recordingCase.expected.priceUsdAtSnapshot);
+  assert.ok(answer.alternative.condition.includes('explicitly accept newly captured footage'));
+  assert.ok(answer.notes.some((n) => n.includes('length follows the supplied recording')));
+});
+for (const [label, job] of [
+  ['budget', recordingJob.replace('up to $10', 'up to $4')],
+  ['shape', recordingJob.replace('tall film', 'square film')],
+  ['named skill without recording input', `${recordingJob} Use Device film.`],
+]) test(`recording-only still enforces ${label}`, async () => {
+  const answer = await recommend(new Catalogue(snapshot, { offline: true }), job);
+  assert.equal(answer.status, 'no_match');
+  assert.equal(answer.install_line, undefined);
+});
+test('recording-only requires explicit asks, not broad input tags', async () => {
+  const changed = structuredClone(snapshot);
+  const recording = changed.skills.find((s) => s.slug === 'recording-film');
+  recording.asks = ['A working app or demo'];
+  recording.inputs = ['Screen recording'];
+  const answer = await recommend(new Catalogue(changed, { offline: true }), recordingJob);
+  assert.equal(answer.status, 'no_match');
+  assert.match(answer.reasons, /does not list a supplied screen recording/);
+  assert.equal(answer.install_line, undefined);
+});
+test('recording-only does not invent an unavailable skill', async () => {
+  const changed = { ...snapshot, skills: snapshot.skills.filter((s) => s.slug !== 'recording-film') };
+  const answer = await recommend(new Catalogue(changed, { offline: true }), recordingJob);
+  assert.equal(answer.status, 'no_match');
+  assert.equal(answer.install_line, undefined);
 });

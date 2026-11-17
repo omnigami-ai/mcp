@@ -69,8 +69,9 @@ are promoted. Two deliverables ask which comes first and name both choices.
 Version one uses deterministic English routing. The host should inspect the
 user's authorized product material and pass a self-contained brief. The server
 does not inspect product URLs, verify screens or infer business facts. Complex
-implications and negations still need host judgment. A supplied recording has no
-verified match while the published catalogue lists no recording input.
+implications and negations still need host judgment. Recording-only phone films
+route to Recording film when its listed inputs accept a supplied recording and
+the budget and shapes fit. Film length follows the recording.
 
 ## Public data and privacy
 
@@ -85,7 +86,7 @@ Free-page prompts come from the site's Copy install prompt. Paid pages omit
 that button, so their public install.md Ask line is wrapped in the site's same
 prompt format; `prompt_source` identifies this fallback.
 
-The bundle contains 36 public skills, checked on 2026-11-07. No keys, accounts,
+The bundle contains 42 public skills, checked on 2026-11-17. No keys, accounts,
 analytics or runtime disk cache. Jobs and product URLs are never sent to the
 site. `product_url` only fills the returned request. The runtime reads its own
 installed modules/data, never the user's product repo or credentials. Your host
@@ -113,6 +114,8 @@ workspace it also compiles the real `site/src/data/skills.ts`, finder helpers
 and availability helper. Use `-- --site /path/to/site` explicitly or `-- --live`
 for the independent public repository. Network/parse failure fails the check.
 `npm run snapshot` refreshes public data; review the diff and rebuild afterward.
+Refresh `test/fixtures/llms.txt` from the same `LLMS` URL using `publicGet` in
+`src/catalogue.mjs`; it is the captured public response, not a generated table.
 
 CI tests Node 20, 22 and 24 and checks live snapshot freshness. For the clean
 tarball install plus Inspector CLI smoke test, use Node 24.22.1+:

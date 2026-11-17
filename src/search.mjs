@@ -29,7 +29,7 @@ export const preferred = {
   'store-images': 'app-store-screenshots', 'store-video': 'app-store-preview', investor: 'pitch-deck', sales: 'sales-deck',
   presenter: 'product-deck', 'dark-mockups': 'screen-lit-mockups', 'light-mockups': 'device-mockups', release: 'whats-new',
   morph: 'ui-morph', campaign: 'launch-kit', 'share-cards': 'share-cards', diagram: 'flow-diagram', terminal: 'terminal-film',
-  'end-card': 'end-card', 'cursor-camera': 'cursor-camera', launch: 'product-film',
+  'end-card': 'end-card', 'cursor-camera': 'cursor-camera', launch: 'product-film', recording: 'recording-film',
 };
 export function searchSkills(skills, query, { kind, free, limit = 8 } = {}) {
   const terms = words(query), q = normalize(query).trim(), intent = intentOf(query);

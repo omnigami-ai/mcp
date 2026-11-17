@@ -1,13 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { Catalogue, parseTable, parseDetails, publicGet, validSlug } from '../src/catalogue.mjs';
+import { Catalogue, parseTable, parseDetails, parseTools, publicGet, validSlug } from '../src/catalogue.mjs';
 const snapshot = JSON.parse(await readFile(new URL('../data/catalogue.json', import.meta.url)));
 const llms = await readFile(new URL('./fixtures/llms.txt', import.meta.url), 'utf8');
 const response = (body, status = 200) => new Response(body, { status });
 test('live table matches published slugs, price and install lines', () => {
   const rows = parseTable(llms, snapshot);
-  assert.equal(rows.length, 36);
+  assert.deepEqual(rows.map((s) => s.slug).sort(), snapshot.skills.map((s) => s.slug).sort());
   for (const s of rows) {
     const old = snapshot.skills.find((p) => p.slug === s.slug);
     for (const key of ['name','free','price','makes']) assert.equal(s[key], old[key]);
@@ -30,9 +30,12 @@ test('live changes win: price, removal, additions, availability', () => {
 test('offline/errors/invalid formats fall back with dated warning and no logging', async () => {
   for (const fetchImpl of [async () => { throw Error('offline'); }, async () => response('<html>oops</html>'), async () => response('bad', 503)]) {
     const c = new Catalogue(snapshot, { fetchImpl });
-    assert.equal((await c.list()).catalogue.source, 'snapshot');
+    const { catalogue } = await c.list();
+    assert.equal(catalogue.source, 'snapshot');
+    assert.equal(catalogue.snapshot_date, snapshot.generated);
+    assert.ok(catalogue.notes.some((n) => n.includes(`as of ${snapshot.generated}; confirm availability and price`)));
     assert.match((await c.get('product-film')).notes.join(), /confirm/i);
-    assert.equal(await c.get('recording-film'), null);
+    assert.equal(await c.get('not-a-published-skill'), null);
   }
 });
 test('refresh is coalesced, cached, and declares an older bundle', async () => {
@@ -64,7 +67,9 @@ test('page attributes decode exact prompt text, paid Ask is the fallback', () =>
   assert.equal(parseDetails(md, html.split('<button')[0], row).request, row.request);
 });
 test('live free tool removals are respected', async () => {
-  const noTools=llms.replace(/^- \[(?:OG image maker|Device mockup maker)\].*$/gm,'');
+  assert.ok(parseTools(llms).length > 0);
+  const noTools=llms.replace(/^- \[[^\]]+\]\(https:\/\/omnigami\.ai\/tools\/[a-z0-9-]+\): .*$/gm,'');
+  assert.deepEqual(parseTools(noTools), []);
   const c=new Catalogue(snapshot,{fetchImpl:async()=>response(noTools)});
   assert.deepEqual((await c.list()).tools,[]);
 });
