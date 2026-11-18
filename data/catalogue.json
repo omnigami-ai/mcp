@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-11-17",
+  "generated": "2026-11-18",
   "source": "https://omnigami.ai/llms.txt",
   "refresh": {
     "llms": "https://omnigami.ai/llms.txt",
@@ -42,7 +42,7 @@
       "asks": [
         "A working app or demo and the real states to show",
         "Your supported desktop and phone layouts",
-        "Your colours, licensed fonts and a short product line"
+        "Your colors, licensed fonts and a short product line"
       ],
       "files": [
         "`out/L1/L1.png, out/L2/L2.png`: Two wide looks at 1920 × 1080: a laptop and phone, with or without a short product line.",
@@ -154,7 +154,7 @@
       "asks": [
         "A working app or demo with a genuine dark phone layout",
         "Two different real moments, such as a plan and its completed result",
-        "Your accent colour, licensed fonts and a short product line"
+        "Your accent color, licensed fonts and a short product line"
       ],
       "files": [
         "`out/Q-D1.png, out/Q-D2.png, out/R-*.png, out/T-*.png`: Three photographic looks, each with a wide phone shot and a headline-and-phone shot at 1920 × 1080.",
@@ -168,7 +168,7 @@
         "Python 3.10 or later",
         "NumPy, OpenCV and Pillow",
         "Real dark phone screenshots",
-        "Blender only for custom angles or phone colours",
+        "Blender only for custom angles or phone colors",
         "Optional classic hand: Node 20.11+, Chrome with WebGL and puppeteer-core"
       ],
       "costs": "The skill, $4.99 once. Your agent’s usual usage applies; the included hand needs no new generation or paid image account.",
@@ -431,7 +431,7 @@
         }
       ],
       "tagline": "A 40-second launch film of your real product, in a stepped cut-paper style.",
-      "lede": "A launch film of your real product, in a stepped cut-paper style. Give it your product. It redraws your real screens large and crisp, 12 frames a second, on flat colour fields that change by hard cuts. An oversized cursor leans into each click, and every beat has room to be read.",
+      "lede": "A launch film of your real product, in a stepped cut-paper style. Give it your product. It redraws your real screens large and crisp, 12 frames a second, on flat color fields that change by hard cuts. An oversized cursor leans into each click, and every beat has room to be read.",
       "goodFor": [
         "Web apps and tools with a clear job to show on screen",
         "Launch films and landing pages that should look made, not generated",
@@ -1815,9 +1815,9 @@
         }
       ],
       "tagline": "Everything you make, one item a beat.",
-      "lede": "Everything you make, one item a beat. A short reel of a whole range. Each item gets a beat with its photo, name and detail, then the last pulls back into your real catalogue: your numbers count up, your real search finds one, and your name holds to the end.",
+      "lede": "Everything you make, one item a beat. A short reel of a whole range. Each item gets a beat with its photo, name and detail, then the last pulls back into your real catalog: your numbers count up, your real search finds one, and your name holds to the end.",
       "goodFor": [
-        "Shops, catalogues and apps with a collection to show",
+        "Shops, catalogs and apps with a collection to show",
         "Products with good photos of each item",
         "Reels and posts for Instagram, TikTok and X"
       ],
@@ -2731,7 +2731,7 @@
         }
       ],
       "tagline": "Your assistant doing one real job, filmed through its UI in depth.",
-      "lede": "Your assistant doing one real job, filmed through its UI in depth. Give it your working product. It captures a request, the assistant’s evidence, its action and the result, then films your real screens with raised UI, travelling focus and a moving camera. A wide and a tall MP4 with music, plus the editable film.",
+      "lede": "Your assistant doing one real job, filmed through its UI in depth. Give it your working product. It captures a request, the assistant’s evidence, its action and the result, then films your real screens with raised UI, traveling focus and a moving camera. A wide and a tall MP4 with music, plus the editable film.",
       "goodFor": [
         "Assistants and agent features with a visible request and result",
         "Software launches and feature announcements",
@@ -2743,7 +2743,7 @@
         "Your brand, closing line and anything to avoid"
       ],
       "files": [
-        "`out/final/16x9.mp4`: A wide (1920 × 1080) and a tall (1080 × 1920) MP4, each laid out for its frame, at 30 fps, with the included song, the synthesised score or a song you have the rights to.",
+        "`out/final/16x9.mp4`: A wide (1920 × 1080) and a tall (1080 × 1920) MP4, each laid out for its frame, at 30 fps, with the included song, the synthesized score or a song you have the rights to.",
         "`film/index.html`: An editable, self-contained film with your real captures, fonts, mark and vendored 3D runtime.",
         "`STORY.md, PRODUCT.md, capture/`: The story, brand notes and reproducible capture plans.",
         "`out/*-poster.png, out/REVIEW.md, out/CAPTION.md`: A poster, contact sheets, critique notes and a short sharing caption."
@@ -3060,7 +3060,7 @@
       ],
       "files": [
         "`out/final/16x9.mp4`: A wide (1920 × 1080) and a tall (1080 × 1920) film, each laid out for its frame, at 30 fps, with music.",
-        "`film/index.html`: The editable film, with your captured screens, words, colours, fonts and mark.",
+        "`film/index.html`: The editable film, with your captured screens, words, colors, fonts and mark.",
         "`STORY.md, out/REVIEW.md`: The story beat by beat, and its review notes and checks.",
         "`out/final/16x9-poster.png, out/contact/, out/CAPTION.md`: A poster, contact sheet and short caption for sharing."
       ],
@@ -3198,7 +3198,7 @@
         }
       ],
       "tagline": "Your mark built from its own geometry, then your line, then your lockup.",
-      "lede": "Your mark built from its own geometry, then your line, then your lockup. A logo reveal drawn from your mark’s own geometry, while four short lines say what your product does. The camera pushes into its colour, your line types into your own product, and one press blooms out to your lockup.",
+      "lede": "Your mark built from its own geometry, then your line, then your lockup. A logo reveal drawn from your mark’s own geometry, while four short lines say what your product does. The camera pushes into its color, your line types into your own product, and one press blooms out to your lockup.",
       "goodFor": [
         "Opening a launch video, a demo or a channel with your brand",
         "Marks drawn from circles, arcs and bars, with an idea behind them",
@@ -3819,7 +3819,7 @@
         }
       ],
       "tagline": "One journey through your product, one step per shot.",
-      "lede": "One journey through your product, one step per shot. Give it one journey through your product, like sending an invoice or booking a stay. Your real screens play on a photoreal 3D laptop and phone, one step per shot, on bold flat colours, and the steps fill in as they happen, ending on your real result.",
+      "lede": "One journey through your product, one step per shot. Give it one journey through your product, like sending an invoice or booking a stay. Your real screens play on a photoreal 3D laptop and phone, one step per shot, on bold flat colors, and the steps fill in as they happen, ending on your real result.",
       "goodFor": [
         "Software with a clear flow: send, book, pay or publish",
         "Products with real things to show, from the order to the result",
@@ -4092,11 +4092,11 @@
         }
       ],
       "tagline": "Give your app a story before the first tap.",
-      "lede": "Give your app a story before the first tap. Turn your app’s real screens into an eight-image App Store set. Short benefit captions, large photoreal phones and your own colours tell a clear story: what the app does, why it helps and a real result in the first three. Export PNGs in two sizes.",
+      "lede": "Give your app a story before the first tap. Turn your app’s real screens into an eight-image App Store set. Short benefit captions, large photoreal phones and your own colors tell a clear story: what the app does, why it helps and a real result in the first three. Export PNGs in two sizes.",
       "goodFor": [
         "An iPhone app’s first App Store listing",
         "A screenshot refresh after a product update",
-        "A coordinated set in your app’s colours, voice and language"
+        "A coordinated set in your app’s colors, voice and language"
       ],
       "asks": [
         "A working app, source or demo with access to its real screens",
@@ -4106,7 +4106,7 @@
       "files": [
         "`out/1320x2868/01.png … 08.png`: Eight ordered RGB PNGs at 1320 × 2868, without an alpha channel.",
         "`out/1206x2622/01.png … 08.png`: The same story at 1206 × 2622, composed and rendered for that size.",
-        "`images/index.html`: Editable, self-contained HTML with local screens, fonts and device assets; named caption, colour and layout fields.",
+        "`images/index.html`: Editable, self-contained HTML with local screens, fonts and device assets; named caption, color and layout fields.",
         "`PRODUCT.md, STORY.md, README.md, out/REVIEW.md`: Product and story notes, preview and export instructions, and a review of every image at full size and 300 px wide."
       ],
       "requirements": [
@@ -4205,7 +4205,7 @@
       "asks": [
         "Your product URL and access to its real screens",
         "Your audience, the workflow to cover and the next action",
-        "Your logo, colours, licensed fonts and anything to avoid"
+        "Your logo, colors, licensed fonts and anything to avoid"
       ],
       "files": [
         "`out/final/html/index.html`: An offline HTML deck with editable source, slide transitions and a presenter view with talking points.",
@@ -4316,7 +4316,7 @@
         }
       ],
       "tagline": "Your app’s store preview and a matching tall social film.",
-      "lede": "Your app’s store preview and a matching tall social film. Show what your app helps people do, one benefit at a time. Each chapter opens on a headline above your app, grows the screen to full frame, then shows one real tap and the app’s own response. Both cuts use your colours, words and the included song.",
+      "lede": "Your app’s store preview and a matching tall social film. Show what your app helps people do, one benefit at a time. Each chapter opens on a headline above your app, grows the screen to full frame, then shows one real tap and the app’s own response. Both cuts use your colors, words and the included song.",
       "goodFor": [
         "iPhone apps preparing or refreshing an App Store preview",
         "A social launch film that matches the store story",
@@ -4470,7 +4470,7 @@
       "asks": [
         "Your product and access to real screens with sample data",
         "Your reader, their next action and requested languages",
-        "Your logo, colours, licensed fonts and existing localizations"
+        "Your logo, colors, licensed fonts and existing localizations"
       ],
       "files": [
         "`out/<lang>/html/index.html`: Offline reading deck with ordered, selectable copy and one working next action.",
@@ -4574,7 +4574,7 @@
       "asks": [
         "Your product and access to its real screens",
         "Your business facts, sources, dates, round and proposed ask",
-        "Your logo, colours, licensed fonts, imagery and supplied team portraits"
+        "Your logo, colors, licensed fonts, imagery and supplied team portraits"
       ],
       "files": [
         "`out/final/html/index.html`: An offline HTML investor deck with slide transitions and presenter notes.",
@@ -4695,7 +4695,7 @@
         }
       ],
       "tagline": "One launch. Every place you share it.",
-      "lede": "One launch. Every place you share it. Turn one product launch into a coordinated campaign: portrait and square carousels, a LinkedIn PDF, feed and story images, profile headers and link previews. Your real screens prove three benefits, with matching colours, one destination and post copy.",
+      "lede": "One launch. Every place you share it. Turn one product launch into a coordinated campaign: portrait and square carousels, a LinkedIn PDF, feed and story images, profile headers and link previews. Your real screens prove three benefits, with matching colors, one destination and post copy.",
       "goodFor": [
         "Product launches and feature announcements with real screens to prove the benefits",
         "Teams that need one coordinated campaign across social platforms",
@@ -4703,7 +4703,7 @@
       ],
       "asks": [
         "Your product, its launch and a working app or demo with sample data",
-        "Your logo, colours, licensed fonts and product imagery",
+        "Your logo, colors, licensed fonts and product imagery",
         "One launch destination and the platforms you plan to use"
       ],
       "files": [
