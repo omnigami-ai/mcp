@@ -1,6 +1,6 @@
 # omnigami MCP
 
-Find an omnigami skill from your agent: search the public catalogue, get its
+Find an omnigami skill from your agent: search the public catalog, get its
 install prompt, or describe the job for a free-first recommendation. Runs locally
 over stdio. It never buys, installs or generates a deliverable.
 
@@ -42,11 +42,11 @@ project, then enable the server in Cursor's MCP settings. For a global setup use
 
 If a GUI cannot find `npx`, use its absolute path. On Windows use `"command":
 "cmd"` and `"args": ["/c", "npx", "-y", "@omnigami-ai/mcp"]`.
-Add `--offline` after the package name to disable catalogue requests.
+Add `--offline` after the package name to disable catalog requests.
 
 The prototype was exercised in Claude Code and Inspector CLI. Desktop and Cursor
 configuration follows their official documentation; their GUIs have not been
-exercised. A skill's own agent support is separate: catalogue results distinguish
+exercised. A skill's own agent support is separate: catalog results distinguish
 Claude Code's tested status from other listed agents.
 [Desktop guide](https://modelcontextprotocol.io/docs/develop/connect-local-servers),
 [Claude Code configuration](https://code.claude.com/docs/en/mcp),
@@ -80,7 +80,7 @@ The server reads fixed public paths on `https://omnigami.ai`: `/llms.txt`, each
 list for prices and availability and refreshes details on demand. The cache
 lasts 15 minutes in memory. Requests have a four-second timeout and 1.5 MB limit,
 reject redirects and send no cookies. Failures fall back to the dated bundled
-snapshot with an explicit warning; detail failures are labelled separately.
+snapshot with an explicit warning; detail failures are labeled separately.
 
 Free-page prompts come from the site's Copy install prompt. Paid pages omit
 that button, so their public install.md Ask line is wrapped in the site's same
