@@ -47,5 +47,5 @@ export function searchSkills(skills, query, { kind, free, limit = 8 } = {}) {
 }
 export function summary(s) {
   return { slug: s.slug, name: s.name, kind: s.kind, one_line: s.tagline, makes: s.makes,
-    free: s.free, price_usd: s.free ? 0 : s.price, page_url: s.page };
+    free: s.free, price_usd: s.free ? 0 : s.price, ...(s.access?.accountRequired ? { account_required: true } : {}), page_url: s.page };
 }

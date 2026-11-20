@@ -19,7 +19,7 @@
         },
         "priceUsdAtSnapshot": 0,
         "access": "free",
-        "installLine": "npx skills add omnigami-ai/product-film",
+        "installLine": null,
         "filledRequest": "Install the Product film skill from https://omnigami.ai/skills/product-film/install.md, then: make a launch video for https://lamplit.example. Use Product film. Make it about 34 seconds in wide for developers running background jobs. Read the supplied local app and brand. Show a failed job, its error log and successful replay; close on npm i lamplit. Use sample data.",
         "alternative": {
           "type": "skill",
@@ -55,7 +55,7 @@
         },
         "priceUsdAtSnapshot": 0,
         "access": "free",
-        "installLine": "npx skills add omnigami-ai/ui-morph",
+        "installLine": null,
         "filledRequest": "Install the UI morph skill from https://omnigami.ai/skills/ui-morph/install.md, then: make a short film of one task in https://fennick.example. Use UI morph. Deliver the 16-second square loop. Follow the supplied app: Your box, Skip a box, choose 10 Dec, save, and hold the confirmed next shipping date. Keep the product's own order and words; use sample data.",
         "alternative": {
           "type": "skill",
@@ -131,8 +131,8 @@
         },
         "priceUsdAtSnapshot": 0,
         "access": "free",
-        "installLine": "npx skills add omnigami-ai/device-mockups",
-        "filledRequest": "Install the Device mockups skill from https://omnigami.ai/skills/device-mockups/install.md, then: make light device mockups from my product\u2019s real screens. Use Device mockups for https://fernwise.example and the supplied local app. Use only the genuine light phone layout, with the due-for-watering state and its watered result. Deliver the T1-line single phone with a product line and the T2 action/result phone pair, both tall at 1080 \u00d7 1920 on a pale ground. Omit the L1 and L2 wide looks, which need a real desktop layout. Do not invent a desktop layout or dark mode.",
+        "installLine": null,
+        "filledRequest": "Install the Device mockups skill from https://omnigami.ai/skills/device-mockups/install.md, then: make light device mockups from my product’s real screens. Use Device mockups for https://fernwise.example and the supplied local app. Use only the genuine light phone layout, with the due-for-watering state and its watered result. Deliver the T1-line single phone with a product line and the T2 action/result phone pair, both tall at 1080 × 1920 on a pale ground. Omit the L1 and L2 wide looks, which need a real desktop layout. Do not invent a desktop layout or dark mode.",
         "alternative": {
           "type": "tool",
           "id": "device-mockup-maker",
@@ -248,7 +248,7 @@
         "priceUsdAtSnapshot": 4.99,
         "access": "already_owned",
         "installLine": "npx skills add omnigami-ai/product-deck",
-        "filledRequest": "Install the Product deck skill from https://omnigami.ai/skills/product-deck/install.md, then: make a product deck to present from my product\u2019s real screens. Use Product deck for https://veyset.example. I will present to team leads in 16:9, with talking points. Follow the supplied app from weekly commitments to recording D-018 and drafting, reviewing and explicitly sharing the Friday update. Use sample data and the supplied brand. Keep a recorded decision distinct from completed work.",
+        "filledRequest": "Install the Product deck skill from https://omnigami.ai/skills/product-deck/install.md, then: make a product deck to present from my product’s real screens. Use Product deck for https://veyset.example. I will present to team leads in 16:9, with talking points. Follow the supplied app from weekly commitments to recording D-018 and drafting, reviewing and explicitly sharing the Friday update. Use sample data and the supplied brand. Keep a recorded decision distinct from completed work.",
         "alternative": {
           "type": "skill",
           "slug": "sales-deck",
@@ -269,7 +269,7 @@
     },
     {
       "id": "release-roundup",
-      "request": "Make one free release video, in wide, square and tall, from this Ostlery release note: Dark appearance. Show choosing light, dark or system in the real settings screen and the chat in the chosen theme. This is our repeatable release-video format, not a tiny silent loop. The app and brand are available. Close with \u201cTry Ostlery\u201d.",
+      "request": "Make one free release video, in wide, square and tall, from this Ostlery release note: Dark appearance. Show choosing light, dark or system in the real settings screen and the chat in the chosen theme. This is our repeatable release-video format, not a tiny silent loop. The app and brand are available. Close with “Try Ostlery”.",
       "product": {
         "url": "https://ostlery.example"
       },
@@ -285,8 +285,8 @@
         },
         "priceUsdAtSnapshot": 0,
         "access": "free",
-        "installLine": "npx skills add omnigami-ai/whats-new",
-        "filledRequest": "Install the What\u2019s new skill from https://omnigami.ai/skills/whats-new/install.md, then: make a what\u2019s-new video for our latest release of https://ostlery.example. Use What\u2019s new. The supplied release note is \u201cDark appearance\u201d. Demonstrate light, dark and system appearance in the real settings and chat screens, with sample data. Use wide, square and tall; close on \u201cTry Ostlery\u201d. Do not invent a version number or a second release entry.",
+        "installLine": null,
+        "filledRequest": "Install the What’s new skill from https://omnigami.ai/skills/whats-new/install.md, then: make a what’s-new video for our latest release of https://ostlery.example. Use What’s new. The supplied release note is “Dark appearance”. Demonstrate light, dark and system appearance in the real settings and chat screens, with sample data. Use wide, square and tall; close on “Try Ostlery”. Do not invent a version number or a second release entry.",
         "alternative": {
           "type": "skill",
           "slug": "product-film",
@@ -306,7 +306,7 @@
     },
     {
       "id": "one-share-image",
-      "request": "I need just one 1200 \u00d7 630 link-preview image for Upshot from the supplied screenshot and our line \u201cThe meeting, down to what matters.\u201d I can do it manually in a free browser tool. No repo changes, batch generation or ongoing per-page setup. Budget is zero.",
+      "request": "I need just one 1200 × 630 link-preview image for Upshot from the supplied screenshot and our line “The meeting, down to what matters.” I can do it manually in a free browser tool. No repo changes, batch generation or ongoing per-page setup. Budget is zero.",
       "product": {
         "url": "https://upshot.example"
       },
@@ -325,7 +325,7 @@
         "access": "free",
         "installLine": null,
         "filledRequest": null,
-        "nextStep": "Open the OG image maker, choose the link-preview size, load the supplied Upshot screenshot, use \u201cThe meeting, down to what matters.\u201d, and download the image. No skill installation is needed.",
+        "nextStep": "Open the OG image maker, choose the link-preview size, load the supplied Upshot screenshot, use “The meeting, down to what matters.”, and download the image. No skill installation is needed.",
         "alternative": {
           "type": "skill",
           "slug": "share-cards",
@@ -364,7 +364,7 @@
         "priceUsdAtSnapshot": 4.99,
         "access": "purchase_with_connected_github",
         "installLine": "npx skills add omnigami-ai/recording-film",
-        "filledRequest": "Install the Recording film skill from https://omnigami.ai/skills/recording-film/install.md, then: make a Recording film from my app\u2019s screen recording, or record one complete task in my web app\u2019s phone layout. Use Recording film. Product: https://whippet.example. Use only the supplied Whippet MP4, preserve its footage and make a tall photoreal-phone film with camera close-ups. Target 20 seconds; confirm this against the recording length, since the film follows the recording. No app access or permission to rebuild or recapture.",
+        "filledRequest": "Install the Recording film skill from https://omnigami.ai/skills/recording-film/install.md, then: make a Recording film from my app’s screen recording, or record one complete task in my web app’s phone layout. Use Recording film. Product: https://whippet.example. Use only the supplied Whippet MP4, preserve its footage and make a tall photoreal-phone film with camera close-ups. Target 20 seconds; confirm this against the recording length, since the film follows the recording. No app access or permission to rebuild or recapture.",
         "alternative": {
           "type": "skill",
           "slug": "device-film",

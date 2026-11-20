@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-11-18",
+  "generated": "2026-11-20",
   "source": "https://omnigami.ai/llms.txt",
   "refresh": {
     "llms": "https://omnigami.ai/llms.txt",
     "installMd": "https://omnigami.ai/skills/<slug>/install.md"
   },
   "promptPlaceholder": "https://your-product.com",
-  "access": "Free skills install with no account. A paid skill installs only after purchase (the skill alone, or a plan that includes every paid skill), through the buyer’s GitHub account; the install lines are the same.",
+  "access": "Free skills are free with an omnigami account: the person signs in, accepts the license and approves a code in their browser, through the omnigami installer (npx omnigami) or a signed-in download; follow each skill's install.md. A Pro skill installs only after purchase (the skill alone, or a plan that includes every Pro skill), through the buyer's GitHub account. Never use cached commands, mirrors or guessed archive addresses to get around access.",
   "skills": [
     {
       "slug": "device-mockups",
@@ -74,7 +74,11 @@
         "Working app or demo"
       ],
       "install": {
-        "npx": "npx skills add omnigami-ai/device-mockups"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install device-mockups --agent <agent> --json"
+        ]
       },
       "metadataSource": "live install.md and page copy prompt",
       "platforms": [
@@ -119,7 +123,12 @@
           "tested": false
         }
       ],
-      "prompt_source": "page Copy install prompt"
+      "prompt_source": "page Copy install prompt",
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/device-mockups"
+      }
     },
     {
       "slug": "screen-lit-mockups",
@@ -301,7 +310,7 @@
       "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
       "free": true,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 13 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/product-film",
       "installMd": "https://omnigami.ai/skills/product-film/install.md",
@@ -315,7 +324,11 @@
         "Product URL"
       ],
       "install": {
-        "npx": "npx skills add omnigami-ai/product-film"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install product-film --agent <agent> --json"
+        ]
       },
       "metadataSource": "live install.md and page copy prompt",
       "platforms": [
@@ -400,7 +413,12 @@
           "tested": false
         }
       ],
-      "prompt_source": "page Copy install prompt"
+      "prompt_source": "page Copy install prompt",
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/product-film"
+      }
     },
     {
       "slug": "cutout-film",
@@ -458,7 +476,7 @@
       "free": false,
       "price": 4.99,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: yes (Upshot, Lamplit; 3 unattended runs)"
+        "live": "reference passes the repeat check and quick test (quick test 20 October 2026); second-company proof: yes (Upshot, Lamplit; 3 unattended runs)"
       },
       "page": "https://omnigami.ai/skills/cutout-film",
       "installMd": "https://omnigami.ai/skills/cutout-film/install.md",
@@ -617,7 +635,7 @@
       "free": false,
       "price": 7.99,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: yes (Upshot, Fernwise, Tovra; 3 unattended runs)"
+        "live": "reference passes the repeat check and quick test (quick test 2026-11-12); second-company proof: yes (Upshot, Fernwise, Tovra; 3 unattended runs)"
       },
       "page": "https://omnigami.ai/skills/device-film",
       "installMd": "https://omnigami.ai/skills/device-film/install.md",
@@ -770,7 +788,7 @@
       "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
       "free": true,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 25 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/ui-morph",
       "installMd": "https://omnigami.ai/skills/ui-morph/install.md",
@@ -784,7 +802,11 @@
         "Product URL"
       ],
       "install": {
-        "npx": "npx skills add omnigami-ai/ui-morph"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install ui-morph --agent <agent> --json"
+        ]
       },
       "metadataSource": "live install.md and page copy prompt",
       "platforms": [
@@ -869,7 +891,12 @@
           "tested": false
         }
       ],
-      "prompt_source": "page Copy install prompt"
+      "prompt_source": "page Copy install prompt",
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/ui-morph"
+      }
     },
     {
       "slug": "chat-launch",
@@ -918,7 +945,7 @@
       "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
       "free": true,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 17 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/chat-launch",
       "installMd": "https://omnigami.ai/skills/chat-launch/install.md",
@@ -933,13 +960,21 @@
         "Product URL"
       ],
       "install": {
-        "npx": "npx skills add omnigami-ai/chat-launch"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install chat-launch --agent <agent> --json"
+        ]
       },
       "metadataSource": "live install.md and page copy prompt",
       "platforms": [
         {
           "name": "Claude Code",
           "tested": true
+        },
+        {
+          "name": "Codex",
+          "tested": false
         },
         {
           "name": "Gemini CLI",
@@ -967,10 +1002,6 @@
         },
         {
           "name": "GitHub Copilot",
-          "tested": false
-        },
-        {
-          "name": "Codex",
           "tested": false
         },
         {
@@ -1018,7 +1049,12 @@
           "tested": false
         }
       ],
-      "prompt_source": "page Copy install prompt"
+      "prompt_source": "page Copy install prompt",
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/chat-launch"
+      }
     },
     {
       "slug": "unfold",
@@ -1070,7 +1106,7 @@
       "costs": "The skill, $4.99 once. Nothing else beyond your Claude plan’s usage; Node, ffmpeg and the browser are free.",
       "free": true,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 17 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/unfold",
       "installMd": "https://omnigami.ai/skills/unfold/install.md",
@@ -1083,7 +1119,11 @@
         "Product URL"
       ],
       "install": {
-        "npx": "npx skills add omnigami-ai/unfold"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install unfold --agent <agent> --json"
+        ]
       },
       "metadataSource": "live install.md and page copy prompt",
       "platforms": [
@@ -1168,7 +1208,12 @@
           "tested": false
         }
       ],
-      "prompt_source": "page Copy install prompt"
+      "prompt_source": "page Copy install prompt",
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/unfold"
+      }
     },
     {
       "slug": "language-launch",
@@ -1217,7 +1262,7 @@
       "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
       "free": true,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 17 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/language-launch",
       "installMd": "https://omnigami.ai/skills/language-launch/install.md",
@@ -1230,7 +1275,11 @@
         "Product URL"
       ],
       "install": {
-        "npx": "npx skills add omnigami-ai/language-launch"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install language-launch --agent <agent> --json"
+        ]
       },
       "metadataSource": "live install.md and page copy prompt",
       "platforms": [
@@ -1315,7 +1364,12 @@
           "tested": false
         }
       ],
-      "prompt_source": "page Copy install prompt"
+      "prompt_source": "page Copy install prompt",
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/language-launch"
+      }
     },
     {
       "slug": "milestone",
@@ -1364,7 +1418,7 @@
       "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
       "free": true,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 17 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/milestone",
       "installMd": "https://omnigami.ai/skills/milestone/install.md",
@@ -1377,7 +1431,11 @@
         "Product URL"
       ],
       "install": {
-        "npx": "npx skills add omnigami-ai/milestone"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install milestone --agent <agent> --json"
+        ]
       },
       "metadataSource": "live install.md and page copy prompt",
       "platforms": [
@@ -1462,7 +1520,12 @@
           "tested": false
         }
       ],
-      "prompt_source": "page Copy install prompt"
+      "prompt_source": "page Copy install prompt",
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/milestone"
+      }
     },
     {
       "slug": "illustrated-ad",
@@ -1513,7 +1576,7 @@
       "costs": "None beyond your Claude plan’s usage, unless your image model charges for the illustrations.",
       "free": true,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 17 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/illustrated-ad",
       "installMd": "https://omnigami.ai/skills/illustrated-ad/install.md",
@@ -1526,13 +1589,21 @@
         "Product photos"
       ],
       "install": {
-        "npx": "npx skills add omnigami-ai/illustrated-ad"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install illustrated-ad --agent <agent> --json"
+        ]
       },
       "metadataSource": "live install.md and page copy prompt",
       "platforms": [
         {
           "name": "Claude Code",
           "tested": true
+        },
+        {
+          "name": "Codex",
+          "tested": false
         },
         {
           "name": "Gemini CLI",
@@ -1560,10 +1631,6 @@
         },
         {
           "name": "GitHub Copilot",
-          "tested": false
-        },
-        {
-          "name": "Codex",
           "tested": false
         },
         {
@@ -1611,7 +1678,12 @@
           "tested": false
         }
       ],
-      "prompt_source": "page Copy install prompt"
+      "prompt_source": "page Copy install prompt",
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/illustrated-ad"
+      }
     },
     {
       "slug": "whats-new",
@@ -1619,7 +1691,7 @@
       "kind": "film",
       "output": "film",
       "outputKind": "Release video",
-      "makes": "Release video (whole film), 28 s, wide, square and tall",
+      "makes": "Release video (whole film), 23 s, wide, square and tall",
       "shapes": [
         "wide",
         "square",
@@ -1650,7 +1722,7 @@
         }
       ],
       "tagline": "A release video you can make again with every version.",
-      "lede": "A release video you can make again with every version. Give it your changelog and your product. Each new feature gets a beat: its name, one line, and your real product doing exactly that, close up. Then one number that proves the release, and your mark and version.",
+      "lede": "A release video you can make again with every version. Give it your changelog and your product. Each change gets one short line, then your real product doing it: the camera settles on the button, a press, and the app’s own result, held long enough to see. It ends calmly on your logo and address.",
       "goodFor": [
         "Changelogs, version updates and release notes",
         "Developer tools, web apps and phone apps",
@@ -1659,12 +1731,12 @@
       "asks": [
         "Your changelog or release notes",
         "Your product’s URL, or a build it can run",
-        "The version, and how people get it (an install line, “Update now”, a store name)"
+        "Your logo and web address for the ending"
       ],
       "files": [
-        "`out/16x9.mp4, 1x1.mp4, 9x16.mp4`: Wide, square and tall, each laid out for its frame: 60 fps, motion blur, music and a sound on every click.",
-        "`film/index.html`: The film as one HTML file. The feature names, lines, number and ending are named fields.",
-        "`film/STORY.md`: The features chosen, the moment on your product that shows each one, and a source for the number.",
+        "`out/16x9.mp4, 1x1.mp4, 9x16.mp4`: Wide, square and tall, each composed for its frame: 60 fps, music that lands on the last result, and a sound on every press.",
+        "`film/index.html`: The film as one HTML file. Every line and the ending are named fields you can edit.",
+        "`film/STORY.md`: The changes chosen, the press and result that show each one, and where each claim comes from.",
         "`PRODUCT.md`: Your brand and words, kept for the next release.",
         "`out/CAPTION.md`: A post to share it with, under 280 characters."
       ],
@@ -1677,7 +1749,7 @@
       "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
       "free": true,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 18 November 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/whats-new",
       "installMd": "https://omnigami.ai/skills/whats-new/install.md",
@@ -1691,7 +1763,11 @@
         "Release notes"
       ],
       "install": {
-        "npx": "npx skills add omnigami-ai/whats-new"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install whats-new --agent <agent> --json"
+        ]
       },
       "metadataSource": "live install.md and page copy prompt",
       "platforms": [
@@ -1776,7 +1852,12 @@
           "tested": false
         }
       ],
-      "prompt_source": "page Copy install prompt"
+      "prompt_source": "page Copy install prompt",
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/whats-new"
+      }
     },
     {
       "slug": "product-reel",
@@ -1784,7 +1865,7 @@
       "kind": "film",
       "output": "film",
       "outputKind": "Product reel",
-      "makes": "Product reel (whole film), 25 s, wide, square and tall",
+      "makes": "Product reel (whole film), 23.5 s, wide, square and tall",
       "shapes": [
         "wide",
         "square",
@@ -1841,7 +1922,7 @@
       "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
       "free": true,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 16 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/product-reel",
       "installMd": "https://omnigami.ai/skills/product-reel/install.md",
@@ -1855,13 +1936,21 @@
         "Product photos"
       ],
       "install": {
-        "npx": "npx skills add omnigami-ai/product-reel"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install product-reel --agent <agent> --json"
+        ]
       },
       "metadataSource": "live install.md and page copy prompt",
       "platforms": [
         {
           "name": "Claude Code",
           "tested": true
+        },
+        {
+          "name": "Codex",
+          "tested": false
         },
         {
           "name": "Gemini CLI",
@@ -1889,10 +1978,6 @@
         },
         {
           "name": "GitHub Copilot",
-          "tested": false
-        },
-        {
-          "name": "Codex",
           "tested": false
         },
         {
@@ -1940,7 +2025,12 @@
           "tested": false
         }
       ],
-      "prompt_source": "page Copy install prompt"
+      "prompt_source": "page Copy install prompt",
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/product-reel"
+      }
     },
     {
       "slug": "end-card",
@@ -1963,21 +2053,24 @@
         }
       ],
       "tagline": "Your mark, your address and the one action, held to the last frame.",
-      "lede": "Your mark, your address and the one action, held to the last frame. An end card: your mark is born and slides aside for your name, then your address, the one action (a line to type or your own button) and a tagline land on the beat and hold. Every launch video needs one.",
+      "lede": "Close any video calmly, with your logo and your address held to the last frame. End card closes your video on who made it and where to find you: your logo and address, calmly, at any size. Put it on your brand color or over your last frame, add a launch line or a QR code, or open with it. Your own song carries across the cut.",
       "goodFor": [
-        "Ending any launch video, teaser, demo or ad",
-        "An install line, a package name or a sign-up button",
-        "A logo lockup on its own"
+        "Ending or opening any launch video, teaser, demo or ad",
+        "Adding to a video you already have, over its last frame, at its size and frame rate, with its song carried on",
+        "Launch days and event slides, with “Available now” or a date and a QR code; or a YouTube end screen"
       ],
       "asks": [
-        "Your product’s URL",
-        "The one action: a line to type, or your main button’s words",
-        "Your mark as an SVG or image (or it keeps a placeholder pill)"
+        "Your product’s URL: it reads your name, address and colors from your site",
+        "Your logo: the mark and wordmark as SVG or image files, and a one-color version if the card is on your brand color",
+        "Optionally, a video to end or open and its song file, a launch line, or the address a QR code should open"
       ],
       "files": [
-        "`film/index.html`: The shot as one HTML file. Its words are named fields; the rest is readable code.",
-        "`out/16x9.mp4, 1x1.mp4, 9x16.mp4`: 4.5 seconds in wide, square and tall, each laid out for its frame: 60 fps, motion blur, a 120 BPM bed and the effects.",
-        "`out/*-poster.png`: A poster frame of each shape."
+        "`film/index.html`: The card as one HTML file. Its words are named fields, and each option (brand color, last frame, launch line, QR code, opener) is one setting; the rest is readable code.",
+        "`out/16x9.mp4, 1x1.mp4, 9x16.mp4`: 4.5 seconds in wide, square and tall, each laid out for its frame, at 60 fps, with a song that lands as your logo settles.",
+        "`out/youtube.mp4`: A YouTube end screen, 12 seconds by default, with space kept clear for the next video and subscribe.",
+        "`out/*-still.png, *-poster.png`: The settled card at full resolution, and a poster frame, for each shape.",
+        "`attached/joined.mp4`: With your video: the card joined at its exact size and frame rate, one song carried across the cut, and a check of the join.",
+        "`opened/joined.mp4`: With an opener: a short logo intro before your video, in place of its own intro once you confirm the cut, with the same song leading in."
       ],
       "requirements": [
         "Claude Code with Opus 5.5",
@@ -1988,7 +2081,7 @@
       "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
       "free": true,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 18 November 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/end-card",
       "installMd": "https://omnigami.ai/skills/end-card/install.md",
@@ -2001,7 +2094,11 @@
         "Product URL"
       ],
       "install": {
-        "npx": "npx skills add omnigami-ai/end-card"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install end-card --agent <agent> --json"
+        ]
       },
       "metadataSource": "live install.md and page copy prompt",
       "platforms": [
@@ -2086,7 +2183,12 @@
           "tested": false
         }
       ],
-      "prompt_source": "page Copy install prompt"
+      "prompt_source": "page Copy install prompt",
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/end-card"
+      }
     },
     {
       "slug": "cursor-camera",
@@ -2134,7 +2236,7 @@
       "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
       "free": true,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 13 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/cursor-camera",
       "installMd": "https://omnigami.ai/skills/cursor-camera/install.md",
@@ -2147,7 +2249,11 @@
         "Product URL"
       ],
       "install": {
-        "npx": "npx skills add omnigami-ai/cursor-camera"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install cursor-camera --agent <agent> --json"
+        ]
       },
       "metadataSource": "live install.md and page copy prompt",
       "platforms": [
@@ -2232,7 +2338,12 @@
           "tested": false
         }
       ],
-      "prompt_source": "page Copy install prompt"
+      "prompt_source": "page Copy install prompt",
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/cursor-camera"
+      }
     },
     {
       "slug": "terminal-film",
@@ -2291,7 +2402,7 @@
       "free": false,
       "price": 4.99,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 22 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/terminal-film",
       "installMd": "https://omnigami.ai/skills/terminal-film/install.md",
@@ -2441,7 +2552,7 @@
       "free": false,
       "price": 4.99,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: yes (Tovra, Fernwise; 5 unattended runs)"
+        "live": "reference passes the repeat check and quick test (quick test 22 October 2026); second-company proof: yes (Tovra, Fernwise; 5 unattended runs)"
       },
       "page": "https://omnigami.ai/skills/headline-film",
       "installMd": "https://omnigami.ai/skills/headline-film/install.md",
@@ -2599,7 +2710,7 @@
       "free": false,
       "price": 7.99,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 22 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/walkthrough-film",
       "installMd": "https://omnigami.ai/skills/walkthrough-film/install.md",
@@ -2916,7 +3027,7 @@
       "free": false,
       "price": 7.99,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 2026-10-22); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/statement-film",
       "installMd": "https://omnigami.ai/skills/statement-film/install.md",
@@ -3074,7 +3185,7 @@
       "free": false,
       "price": 4.99,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: yes (Ostlery; 10 unattended runs)"
+        "live": "reference passes the repeat check and quick test (quick test 2026-10-22); second-company proof: yes (Ostlery; 10 unattended runs)"
       },
       "page": "https://omnigami.ai/skills/collage-film",
       "installMd": "https://omnigami.ai/skills/collage-film/install.md",
@@ -3224,7 +3335,7 @@
       "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
       "free": true,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 25 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/android-style-logo-reveal",
       "installMd": "https://omnigami.ai/skills/android-style-logo-reveal/install.md",
@@ -3238,13 +3349,21 @@
         "Working app or demo"
       ],
       "install": {
-        "npx": "npx skills add omnigami-ai/android-style-logo-reveal"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install android-style-logo-reveal --agent <agent> --json"
+        ]
       },
       "metadataSource": "live install.md and page copy prompt",
       "platforms": [
         {
           "name": "Claude Code",
           "tested": true
+        },
+        {
+          "name": "Codex",
+          "tested": false
         },
         {
           "name": "Gemini CLI",
@@ -3272,10 +3391,6 @@
         },
         {
           "name": "GitHub Copilot",
-          "tested": false
-        },
-        {
-          "name": "Codex",
           "tested": false
         },
         {
@@ -3323,7 +3438,12 @@
           "tested": false
         }
       ],
-      "prompt_source": "page Copy install prompt"
+      "prompt_source": "page Copy install prompt",
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/android-style-logo-reveal"
+      }
     },
     {
       "slug": "question-film",
@@ -3346,7 +3466,7 @@
         }
       ],
       "tagline": "Your users’ questions fill the screen, then fold up over your product’s real answers.",
-      "lede": "Your users’ questions fill the screen, then fold up over your product’s real answers. A tall film for products you ask things of. Each question fills the screen in your own input’s style, then folds into a headline as your product’s real answer rises under it, so every answer shows its question.",
+      "lede": "Sell your product with the questions people ask it, and its answers. A tall ad for products people ask things of: assistants, search, booking, support. It puts the questions your users bring on screen, each followed by the answer your product gives, so viewers spot their own question and see it handled.",
       "goodFor": [
         "Products you ask things of: assistants, search, booking, support",
         "A real flow in one film: a request, its answer, an action and its result",
@@ -3372,7 +3492,7 @@
       "costs": "None beyond your Claude plan’s usage. Node, ffmpeg and the browser are free.",
       "free": true,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 26 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/question-film",
       "installMd": "https://omnigami.ai/skills/question-film/install.md",
@@ -3387,13 +3507,21 @@
         "Working app or demo"
       ],
       "install": {
-        "npx": "npx skills add omnigami-ai/question-film"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install question-film --agent <agent> --json"
+        ]
       },
       "metadataSource": "live install.md and page copy prompt",
       "platforms": [
         {
           "name": "Claude Code",
           "tested": true
+        },
+        {
+          "name": "Codex",
+          "tested": false
         },
         {
           "name": "Gemini CLI",
@@ -3421,10 +3549,6 @@
         },
         {
           "name": "GitHub Copilot",
-          "tested": false
-        },
-        {
-          "name": "Codex",
           "tested": false
         },
         {
@@ -3472,7 +3596,12 @@
           "tested": false
         }
       ],
-      "prompt_source": "page Copy install prompt"
+      "prompt_source": "page Copy install prompt",
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/question-film"
+      }
     },
     {
       "slug": "verb-sting",
@@ -3530,7 +3659,7 @@
       "free": false,
       "price": 4.99,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 26 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/verb-sting",
       "installMd": "https://omnigami.ai/skills/verb-sting/install.md",
@@ -3688,7 +3817,7 @@
       "free": false,
       "price": 4.99,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 26 October 2026); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/verb-film",
       "installMd": "https://omnigami.ai/skills/verb-film/install.md",
@@ -4226,7 +4355,7 @@
       "free": false,
       "price": 4.99,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 2026-11-12); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/product-deck",
       "installMd": "https://omnigami.ai/skills/product-deck/install.md",
@@ -4344,7 +4473,7 @@
       "free": false,
       "price": 4.99,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: yes (Fernwise, Ostlery; 10 unattended runs)"
+        "live": "reference passes the repeat check and quick test (quick test 15 November 2026); second-company proof: yes (Fernwise, Ostlery; 10 unattended runs)"
       },
       "page": "https://omnigami.ai/skills/app-store-preview",
       "installMd": "https://omnigami.ai/skills/app-store-preview/install.md",
@@ -4489,7 +4618,7 @@
       "free": false,
       "price": 4.99,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 2026-11-12); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/sales-deck",
       "installMd": "https://omnigami.ai/skills/sales-deck/install.md",
@@ -4593,7 +4722,7 @@
       "free": false,
       "price": 4.99,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 2026-11-12); second-company proof: no"
       },
       "page": "https://omnigami.ai/skills/pitch-deck",
       "installMd": "https://omnigami.ai/skills/pitch-deck/install.md",
@@ -4724,7 +4853,7 @@
       "free": false,
       "price": 4.99,
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: yes (Lamplit, Larchly; 10 unattended runs)"
+        "live": "reference passes the repeat check and quick test (quick test 2026-11-13); second-company proof: yes (Lamplit, Larchly; 10 unattended runs)"
       },
       "page": "https://omnigami.ai/skills/launch-kit",
       "installMd": "https://omnigami.ai/skills/launch-kit/install.md",
@@ -4967,10 +5096,14 @@
       ],
       "installMd": "https://omnigami.ai/skills/changelog-clips/install.md",
       "install": {
-        "npx": "npx skills add omnigami-ai/changelog-clips"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install changelog-clips --agent <agent> --json"
+        ]
       },
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: yes (Lamplit, Fernwise; 5 unattended runs)"
+        "live": "reference passes the repeat check and quick test (quick test 7 November 2026); second-company proof: yes (Lamplit, Fernwise; 5 unattended runs)"
       },
       "tagline": "Release video (whole film), 6.7 s, wide, square and tall",
       "metadataSource": "live install.md and page copy prompt",
@@ -5082,7 +5215,12 @@
         "`out/*-poster.png · out/index.html`: Result posters and a local player with pause controls and reduced-motion support.",
         "`STORY.md · REVIEW.md`: Release captions, source claims, checks and any shapes held for readability.",
         "`out/song/*.mp4`: Optional social versions with the included song made with AI."
-      ]
+      ],
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/changelog-clips"
+      }
     },
     {
       "slug": "recording-film",
@@ -5098,7 +5236,8 @@
         "Product demo"
       ],
       "inputs": [
-        "Working app or demo"
+        "Working app or demo",
+        "Screen recording"
       ],
       "shapes": [
         "wide",
@@ -5109,7 +5248,7 @@
         "npx": "npx skills add omnigami-ai/recording-film"
       },
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: yes (Fernwise, Larchly; 5 unattended runs)"
+        "live": "reference passes the repeat check and quick test (quick test 15 November 2026); second-company proof: yes (Fernwise, Larchly; 5 unattended runs)"
       },
       "tagline": "Feature demo (whole film), 31.1 s, wide and tall",
       "metadataSource": "live install.md and page copy prompt",
@@ -5218,7 +5357,7 @@
       "prompt_source": "public install.md Ask line in site copy-prompt format",
       "files": [
         "`out/9x16.mp4, out/16x9.mp4`: Tall (1080 × 1920) and wide (1920 × 1080) MP4s at 30 fps, with the included song. The length follows your recording.",
-        "`film/cycles/, film/index.html, film/capture/`: Editable, self-contained film source: the Blender camera and look, the live preview, the original recording and its capture plan.",
+        "`film/cycles/, film/index.html, film/capture/`: Editable, self-contained film source: the Blender camera and look, the local HTML project, the original recording and its capture plan.",
         "`out/*-poster.png, out/*-sheet.png`: Posters, contact sheets and phone-width review images.",
         "`STORY.md, out/REVIEW.md, out/CAPTION.md`: The story, check results, review notes and a sharing caption."
       ]
@@ -5248,7 +5387,7 @@
         "npx": "npx skills add omnigami-ai/live-demo"
       },
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: yes (Veyset; 1 unattended run)"
+        "live": "reference passes the repeat check and quick test (quick test 7 November 2026); second-company proof: yes (Veyset; 1 unattended run)"
       },
       "tagline": "Feature demo (whole film), 17.1 s, wide",
       "metadataSource": "live install.md and page copy prompt",
@@ -5517,10 +5656,14 @@
       ],
       "installMd": "https://omnigami.ai/skills/lifestyle-film/install.md",
       "install": {
-        "npx": "npx skills add omnigami-ai/lifestyle-film"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install lifestyle-film --agent <agent> --json"
+        ]
       },
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 2026-11-17); second-company proof: no"
       },
       "tagline": "Launch video (whole film), 29 s, tall",
       "metadataSource": "live install.md and page copy prompt",
@@ -5629,7 +5772,12 @@
         "`out/final/9x16.mp4`: A tall MP4 with the included song, made with AI.",
         "`film/, PRODUCT.md, STORY.md, REVIEW.md`: Editable local source, the task’s story and review notes.",
         "`out/delivery/`: A poster, contact sheet and sharing caption."
-      ]
+      ],
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/lifestyle-film"
+      }
     },
     {
       "slug": "prompt-reel",
@@ -5652,7 +5800,11 @@
       ],
       "installMd": "https://omnigami.ai/skills/prompt-reel/install.md",
       "install": {
-        "npx": "npx skills add omnigami-ai/prompt-reel"
+        "npx": "",
+        "installer": [
+          "npx omnigami login --json",
+          "npx omnigami install prompt-reel --agent <agent> --json"
+        ]
       },
       "proof": {
         "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
@@ -5764,7 +5916,12 @@
         "`out/16x9.mp4, out/9x16.mp4`: Wide and tall MP4s, each laid out for its frame, with the included song.",
         "`film/index.html, out/posters/, out/review/`: An editable local film, posters and review sheets.",
         "`film/STORY.md, film/moments/, film/storyboard/`: A story, a board of output moments and a storyboard for your approval."
-      ]
+      ],
+      "access": {
+        "accountRequired": true,
+        "delivery": "omnigami-installer",
+        "url": "https://omnigami.ai/skills/prompt-reel"
+      }
     },
     {
       "slug": "case-study-deck",
@@ -5789,7 +5946,7 @@
         "npx": "npx skills add omnigami-ai/case-study-deck"
       },
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 2026-11-12); second-company proof: no"
       },
       "tagline": "Case study deck, 16:9 slides",
       "metadataSource": "live install.md and page copy prompt",
@@ -5887,7 +6044,7 @@
         "npx": "npx skills add omnigami-ai/how-to-carousel"
       },
       "proof": {
-        "live": "reference passes the repeat check and quick test (last full run 2026-11-12); second-company proof: no"
+        "live": "reference passes the repeat check and quick test (quick test 2026-11-12); second-company proof: no"
       },
       "tagline": "How-to carousel: How-to carousel 1080×1350",
       "metadataSource": "live install.md and page copy prompt",
@@ -5998,6 +6155,6 @@
   "provenance": {
     "publicSource": "https://omnigami.ai/llms.txt",
     "detailSources": "Public install.md and skill pages; checked against site/src/data/skills.ts",
-    "note": "Only public catalogue facts are bundled. Refreshed 2026-11-07."
+    "note": "Only public catalogue facts are bundled. Refreshed 2026-11-20, after free skills moved behind a free account."
   }
 }

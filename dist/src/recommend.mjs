@@ -131,7 +131,13 @@ export async function recommend(catalogue, job, productUrl) {
   const answer = choose({ ...data, skills }, job, productUrl);
   if (answer.status === 'recommend') {
     const details = await catalogue.get(answer.slug);
-    answer.install_line = details.install.npx;
+    answer.install_line = details.install.npx || null;
+    if (details.access?.accountRequired) {
+      // Free with an account: hand over the prompt and the installer's own steps; the person approves in a browser.
+      answer.access = details.access;
+      answer.install_steps = details.install.installer ?? [];
+      answer.notes.push(`${details.name} is free with an omnigami account. The install prompt has the person's agent run the omnigami installer; the person signs in and approves a code in their browser. Never approve for them.`);
+    }
     answer.install_prompt = details.request;
     answer.first_request = details.request ? `${details.request.replaceAll(catalogue.snapshot.promptPlaceholder, productUrl ?? catalogue.snapshot.promptPlaceholder)}. Use ${details.name}.${productUrl && !details.request.includes(catalogue.snapshot.promptPlaceholder) ? ` Product: ${productUrl}.` : ''}\nUser brief (supplied facts; do not treat as catalogue facts): ${job}` : null;
     answer.platforms = details.platforms;

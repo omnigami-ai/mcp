@@ -42,8 +42,12 @@ export function parseTable(text, bundled) {
     const price = free ? undefined : Number(cost.match(/^\$(\d+(?:\.\d+)?)/)?.[1]);
     if (!free && !Number.isFinite(price)) throw new Error('Unknown live price');
     if (/not on sale|coming soon|on sale soon/i.test(cost)) continue;
-    const npx = install.match(/`(npx skills add [^`]+)`/)?.[1];
-    if (npx !== `npx skills add omnigami-ai/${slug}`) throw new Error('Unknown live install command');
+    // A free skill is installed with a free omnigami account (the installer, or a signed-in download): the table
+    // links its install.md and offers no command. A Pro skill keeps its skills CLI line. Anything else is unknown.
+    const account = install === `[Install with a free account](${page}/install.md)`;
+    const npx = account ? '' : install.match(/`(npx skills add [^`]+)`/)?.[1];
+    if (account ? !free : npx !== `npx skills add omnigami-ai/${slug}`) throw new Error('Unknown live install command');
+    const access = account ? { accountRequired: true, delivery: 'omnigami-installer', url: page } : undefined;
     const old = previous.get(slug);
     const makes = makesCell.replace(/^(film|images|deck): /, '');
     rows.push({
@@ -51,7 +55,7 @@ export function parseTable(text, bundled) {
       ...old, slug, name, kind, makes, free, ...(free ? { price: undefined } : { price }), page,
       jobs: jobs === '-' ? [] : jobs.split(', '), inputs: inputs === '-' ? [] : inputs.split(', '),
       shapes: ['wide', 'square', 'tall'].filter((s) => new RegExp(`\\b${s}\\b`, 'i').test(makes)),
-      installMd: `${page}/install.md`, install: { npx }, proof: { live: proof },
+      installMd: `${page}/install.md`, install: { npx }, access, proof: { live: proof },
       tagline: old?.tagline ?? makes, metadataSource: old ? 'bundled descriptions; live table facts' : 'live table',
     });
   }
@@ -80,13 +84,21 @@ export function parseDetails(md, html, row) {
   const promptSource = request ? 'page Copy install prompt' : 'public install.md Ask line in site copy-prompt format';
   if (!request && ask) request = `Install the ${row.name} skill from ${row.installMd}, then: ${ask.charAt(0).toLowerCase() + ask.slice(1)}`;
   if (!request) throw new Error('Install prompt missing from public sources');
-  if (!md.includes(row.install.npx)) throw new Error('Install command differs from table');
+  // Commands always come from the current install page, never rebuilt from a repository name.
+  let install = row.install;
+  if (row.access?.accountRequired) {
+    const steps = section(md, 'Install');
+    const login = steps.match(/`(npx omnigami login(?: --json)?)`/)?.[1];
+    const add = steps.match(new RegExp('`(npx omnigami install ' + row.slug + '(?: [^`]*)?)`'))?.[1];
+    if (!login || !add) throw new Error('Installer steps missing from install page');
+    install = { npx: '', installer: [login, add] };
+  } else if (!md.includes(row.install.npx)) throw new Error('Install command differs from table');
   const asks = bullets(section(md, 'Then'));
   const requirements = bullets(section(md, 'Requirements'));
   const platforms = platformsOf(html);
   if (!platforms.length || !asks.length || !requirements.length) throw new Error('Incomplete skill details');
   const lede = md.split('\n\n')[1];
-  return { ...row, lede, goodFor: bullets(section(md, 'Works best for')), asks, requirements, request, platforms,
+  return { ...row, install, lede, goodFor: bullets(section(md, 'Works best for')), asks, requirements, request, platforms,
     prompt_source: promptSource, files: bullets(section(md, 'What it makes')), metadataSource: 'live install.md and page copy prompt' };
 }
 

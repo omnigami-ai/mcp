@@ -33,7 +33,8 @@ export async function siteFacts(siteDirectory) {
     const source = await import(`data:text/javascript;base64,${Buffer.from(outputFiles[0].text).toString('base64')}`);
     return source.skills.filter((s) => s.free || source.onSale(s)).map((s) => ({
       slug: s.slug, name: s.name, free: s.free, price: s.free ? undefined : s.price,
-      makes: source.makesLine(s), install: { npx: `npx skills add ${source.skillRepo(s.slug)}` },
+      // free skills install with a free account (no open command); Pro skills keep their skills CLI line
+      makes: source.makesLine(s), install: { npx: s.free ? '' : `npx skills add ${source.skillRepo(s.slug)}` },
       request: `Install the ${s.name} skill from ${ORIGIN}/skills/${s.slug}/install.md, then: ${s.prompt.charAt(0).toLowerCase() + s.prompt.slice(1)}`,
       asks: s.asks, requirements: s.requirements,
       files: s.makes.map((m) => `\`${m.file}\`: ${m.what}`),

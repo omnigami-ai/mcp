@@ -15,6 +15,14 @@ for (const c of cases) test(`finder baseline: ${c.id}`, async () => {
   assert.ok(answer.catalogue.notes.some((n) => n.includes(snapshot.generated)));
   if (answer.status === 'recommend') {
     assert.equal(answer.install_line, c.expected.installLine);
+    if (answer.pick.free) {
+      // a free skill needs a free account: no open command, the installer's own steps, and a note not to approve for the person
+      assert.equal(answer.install_line, null);
+      assert.equal(answer.access.accountRequired, true);
+      assert.match(answer.install_steps[0], /^npx omnigami login/);
+      assert.match(answer.install_steps[1], new RegExp(`^npx omnigami install ${answer.pick.slug}`));
+      assert.match(answer.notes.join(' '), /free with an omnigami account.*Never approve for them/);
+    } else assert.equal(answer.access, undefined);
     assert.equal(answer.install_prompt, snapshot.skills.find((s) => s.slug === answer.pick.slug).request);
     assert.ok(answer.first_request.includes(c.product.url));
     if (!answer.pick.free && !c.constraints.ownedSkills.length) assert.match(answer.reasons, /GitHub/);

@@ -57,7 +57,7 @@ Claude Code's tested status from other listed agents.
 | Tool | Inputs | Result |
 | --- | --- | --- |
 | `search_skills` | `query`, optional `kind` (`film`, `shot`, `images`, `deck`) and boolean `free` | Up to eight matching skills, outputs, USD prices and pages |
-| `get_skill` | `slug` | Inputs, requirements, install prompt, install command and agent platforms |
+| `get_skill` | `slug` | Inputs, requirements, install prompt, how to install (a Pro skill's command, or a free skill's account installer steps) and agent platforms |
 | `recommend` | `job`, optional `product_url` | One pick with reasons and a conditional alternative, a free tool, no match, or a clarification |
 
 For example, ask your agent: “Find a free launch-video skill for my working web
@@ -86,7 +86,13 @@ Free-page prompts come from the site's Copy install prompt. Paid pages omit
 that button, so their public install.md Ask line is wrapped in the site's same
 prompt format; `prompt_source` identifies this fallback.
 
-The bundle contains 42 public skills, checked on 2026-11-17. No keys, accounts,
+The MCP server needs no account. Installing a free skill requires a free omnigami
+account and browser approval through the omnigami installer (`npx omnigami`): the
+server passes on the skill's install prompt and the installer's steps, and never
+signs in or approves for anyone. Pro skills install after purchase, through the
+buyer's GitHub account.
+
+The bundle contains 42 public skills, checked on 2026-11-20. No keys, accounts,
 analytics or runtime disk cache. Jobs and product URLs are never sent to the
 site. `product_url` only fills the returned request. The runtime reads its own
 installed modules/data, never the user's product repo or credentials. Your host
